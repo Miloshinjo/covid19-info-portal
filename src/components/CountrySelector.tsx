@@ -15,7 +15,7 @@ function CountrySelector({ countries, setUrl }: Props) {
     setUrl(`https://covid19.mathdro.id/api/countries/${e.target.value}`);
   };
   return (
-    <div className="relative mb-8 mx-auto w-3/4">
+    <div className="relative mb-8 w-1/2">
       <select
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

@@ -8,12 +8,11 @@ type Props = {
 function Stats({ url }: Props) {
   const [stats, fetching, error] = useFetchData(url);
 
-  if (fetching || !stats)
-    return <div className="mx-auto w-3/4">Loading...</div>;
-  if (error) return <div className="mx-auto w-3/4">No data yet</div>;
+  if (fetching || !stats) return <div>Loading...</div>;
+  if (error) return <div>No reports of a virus yet.</div>;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto w-3/4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
       <Card
         title={Object.keys(stats)[0]}
         value={stats.confirmed.value}

@@ -9,7 +9,9 @@ function Card({ title, value, textColor }: Props) {
     <div className="bg-white shadow-lg inline-flex flex-col justify-between rounded-lg">
       <div className="p-4">
         <h2 className="text-center uppercase">{title}</h2>
-        <div className={`text-center mt-3 text-4xl ${textColor}`}>{value}</div>
+        <div className={`text-center mt-3 text-4xl ${textColor}`}>
+          {Intl.NumberFormat('de-DE').format(value)}
+        </div>
       </div>
     </div>
   );

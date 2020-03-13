@@ -11,7 +11,7 @@ function HomePage({ countries }: Props) {
   const [url, setUrl] = useState<string>('https://covid19.mathdro.id/api');
 
   return (
-    <div className="container mx-auto flex flex-col justify-center">
+    <div className="container mx-auto w-2/4 flex flex-col justify-center">
       <h1 className="text-xl md:text-3xl  text-center font-semibold uppercase bold my-8">
         COVID19 Virus Info Portal
       </h1>
