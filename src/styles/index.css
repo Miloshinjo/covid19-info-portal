@@ -17,3 +17,11 @@
     transform: rotate(360deg);
   }
 }
+
+.section {
+  @apply pb-12 border-b mb-4;
+}
+
+.section__header {
+  @apply font-light mb-4 text-xl text-gray-600;
+}

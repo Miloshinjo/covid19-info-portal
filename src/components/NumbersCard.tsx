@@ -12,9 +12,9 @@ function Card({ title, value, textColor, fetching, error }: Props) {
   return (
     <div className="bg-white shadow-lg inline-flex flex-col justify-between rounded-lg">
       <div className="p-4">
-        <h2 className="text-center uppercase">{title}</h2>
+        <h2 className="text-center uppercase font-medium text-lg">{title}</h2>
         <div
-          className={`text-center mt-3 text-4xl ${textColor} flex justify-center`}
+          className={`text-center mt-3 font-medium text-4xl ${textColor} flex justify-center`}
         >
           {error ? (
             '0'

@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from './NumbersCard';
 import useFetchData from '../hooks/useFetchData';
 
 type Props = {
