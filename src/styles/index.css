@@ -3,3 +3,17 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+.loading-spinner {
+  animation: infinite-spinning 2s infinite;
+  @apply fill-current text-gray-900 h-8 w-8 m-2;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
