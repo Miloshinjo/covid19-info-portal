@@ -1,3 +1,5 @@
+import LoadingSvg from '../public/virus.svg';
+
 function Loading() {
   return (
     <div className="loading-spinner">
