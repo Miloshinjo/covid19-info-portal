@@ -4,12 +4,13 @@ import Stats from '../components/Stats';
 import CountrySelector from '../components/CountrySelector';
 import CoronaIcon from '../components/icons/Corona';
 import Symptoms from '../components/Symptoms';
+import Measures from '../components/Measures';
 
 type Props = {
   countries: string[];
 };
 
-function HomePage({ countries }: Props) {
+export default function HomePage({ countries }: Props) {
   const [url, setUrl] = useState<string>('https://covid19.mathdro.id/api');
 
   return (
@@ -32,10 +33,11 @@ function HomePage({ countries }: Props) {
         <h2 className="section__header">known symptoms</h2>
         <Symptoms />
       </section>
-      {/* <section className="section">
-        <h2 className="section__header">what can you do</h2>
-      </section>
       <section className="section">
+        <h2 className="section__header">what can you do to protect yourself</h2>
+        <Measures />
+      </section>
+      {/* <section className="section">
         <h2 className="section__header">frequently asked questions</h2>
       </section> */}
     </main>
@@ -51,5 +53,3 @@ export async function getStaticProps() {
     }
   };
 }
-
-export default HomePage;

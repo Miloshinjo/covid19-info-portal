@@ -3,7 +3,7 @@ import CoughIcon from './icons/Cough';
 import FeverIcon from './icons/Fever';
 import LungsIcon from './icons/Lungs';
 
-function Symptoms() {
+export default function Symptoms() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
       <SymptomCard
@@ -21,5 +21,3 @@ function Symptoms() {
     </div>
   );
 }
-
-export default Symptoms;

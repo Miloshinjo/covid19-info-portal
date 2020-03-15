@@ -8,7 +8,7 @@ type Props = {
   error: boolean;
 };
 
-function Card({
+export default function Card({
   title,
   value,
   textColor = 'text-gray-900',
@@ -34,5 +34,3 @@ function Card({
     </div>
   );
 }
-
-export default Card;

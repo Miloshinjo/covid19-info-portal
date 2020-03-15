@@ -5,7 +5,7 @@ type Props = {
   setUrl: Dispatch<SetStateAction<string>>;
 };
 
-function CountrySelector({ countries, setUrl }: Props) {
+export default function CountrySelector({ countries, setUrl }: Props) {
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === 'Worldwide') {
       setUrl(`https://covid19.mathdro.id/api`);
@@ -40,5 +40,3 @@ function CountrySelector({ countries, setUrl }: Props) {
     </div>
   );
 }
-
-export default CountrySelector;

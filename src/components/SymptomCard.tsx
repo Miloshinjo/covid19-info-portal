@@ -5,7 +5,7 @@ type Props = {
   icon: JSX.Element;
 };
 
-function SymptomCard({ title, icon }: Props) {
+export default function SymptomCard({ title, icon }: Props) {
   return (
     <div className="elevation inline-flex">
       <div className="p-4 flex items-center">
@@ -19,5 +19,3 @@ function SymptomCard({ title, icon }: Props) {
     </div>
   );
 }
-
-export default SymptomCard;

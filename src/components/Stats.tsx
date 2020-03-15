@@ -5,7 +5,7 @@ type Props = {
   url: string;
 };
 
-function Stats({ url }: Props) {
+export default function Stats({ url }: Props) {
   const [stats, fetching, error] = useFetchData(url);
 
   return (
@@ -33,5 +33,3 @@ function Stats({ url }: Props) {
     </div>
   );
 }
-
-export default Stats;
