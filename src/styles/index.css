@@ -25,3 +25,7 @@
 .section__header {
   @apply font-light mb-4 text-xl text-gray-600;
 }
+
+.elevation {
+  @apply bg-white shadow-lg rounded-lg;
+}

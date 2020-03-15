@@ -3,14 +3,20 @@ import Loading from './Loading';
 type Props = {
   title: string;
   value: number;
-  textColor: string;
+  textColor?: string;
   fetching: boolean;
   error: boolean;
 };
 
-function Card({ title, value, textColor, fetching, error }: Props) {
+function Card({
+  title,
+  value,
+  textColor = 'text-gray-900',
+  fetching,
+  error
+}: Props) {
   return (
-    <div className="bg-white shadow-lg inline-flex flex-col justify-between rounded-lg">
+    <div className="inline-flex flex-col justify-between elevation">
       <div className="p-4">
         <h2 className="text-center uppercase font-medium text-lg">{title}</h2>
         <div

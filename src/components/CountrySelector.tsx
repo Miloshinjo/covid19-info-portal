@@ -7,7 +7,7 @@ type Props = {
 
 function CountrySelector({ countries, setUrl }: Props) {
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Entire World') {
+    if (e.target.value === 'Worldwide') {
       setUrl(`https://covid19.mathdro.id/api`);
       return;
     }
@@ -20,7 +20,7 @@ function CountrySelector({ countries, setUrl }: Props) {
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       >
-        <option>Entire World</option>
+        <option>Worldwide</option>
         <option disabled>---</option>
         {countries.map((country: string) => (
           <option key={country} value={country}>

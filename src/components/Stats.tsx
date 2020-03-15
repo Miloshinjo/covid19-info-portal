@@ -13,14 +13,13 @@ function Stats({ url }: Props) {
       <Card
         title="Confirmed"
         value={stats?.confirmed?.value}
-        textColor="text-orange-400"
         fetching={fetching}
         error={Boolean(error)}
       />
       <Card
         title="Recovered"
         value={stats?.recovered?.value}
-        textColor="text-green-400"
+        textColor="text-teal-500"
         fetching={fetching}
         error={Boolean(error)}
       />
