@@ -4,6 +4,7 @@ import SocialDistancingIcon from './icons/SocialDistancing';
 import TouchEyeIcon from './icons/TouchEye';
 import ShakeHandsIcon from './icons/ShakeHands';
 import VentilationIcon from './icons/Ventilation';
+import ClipboardIcon from './icons/Clipboard';
 
 export default function Measures() {
   return (
@@ -47,7 +48,7 @@ export default function Measures() {
         title="Boost your immune system"
         paragraph="Make sure to get enough sleep, eat healthy, get enough vitamins and supplements and excercise in order to boost your immune system."
         icon={
-          <VentilationIcon className="w-16 h-16 fill-current text-teal-500" />
+          <ClipboardIcon className="w-16 h-16 fill-current text-teal-500" />
         }
       />
     </div>
