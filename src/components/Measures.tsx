@@ -8,7 +8,7 @@ import ClipboardIcon from './icons/Clipboard';
 
 export default function Measures() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8">
       <MeasureCard
         title="Social Distancing"
         paragraph="Stay home if you can. It's the best way to avoid getting infected. Work from home if your job allows it. Only go out for essential food and medicine."

@@ -24,7 +24,7 @@ export default function Stats({ url }: Props) {
         error={Boolean(error)}
       />
       <Card
-        title="Died"
+        title="Fatal"
         value={stats?.deaths?.value}
         textColor="text-red-400"
         fetching={fetching}
