@@ -36,12 +36,14 @@ export default function HomePage({ countries }: Props) {
           <h2 className="section__header">known symptoms</h2>
           <Symptoms />
         </section>
-        <section className="section">
-          <h2 className="section__header">
+      </div>
+      <div className="bg-teal-500 text-white">
+        <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
+          <h2 className="font-medium mb-2 text-xl uppercase">
             what can you do to protect yourself
           </h2>
           <Measures />
-        </section>
+        </div>
       </div>
 
       <FAQ />

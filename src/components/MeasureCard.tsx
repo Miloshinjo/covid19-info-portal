@@ -10,7 +10,7 @@ export default function MeasureCard({ title, paragraph, icon }: Props) {
       <div>{icon}</div>
       <div className="ml-4">
         <h4 className="font-semibold text-2xl leading-none mb-2">{title}</h4>
-        <p className="text-gray-800">{paragraph}</p>
+        <p className="text-red-100">{paragraph}</p>
       </div>
     </div>
   );

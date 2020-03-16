@@ -3,7 +3,7 @@ import Question from './Question';
 export default function FAQ() {
   return (
     <div className="bg-gray-900 text-white">
-      <div className="container mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
+      <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="font-medium mb-2 text-xl uppercase">
           frequently asked questions
         </h2>
