@@ -7,7 +7,7 @@ type Props = {
 
 export default function SymptomCard({ title, icon }: Props) {
   return (
-    <div className="elevation inline-flex">
+    <div className="bg-white rounded inline-flex">
       <div className="p-4 flex items-center">
         <div className="p-2 rounded-full flex items-center justify-center bg-teal-500">
           {icon}
