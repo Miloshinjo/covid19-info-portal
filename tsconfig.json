@@ -11,10 +11,10 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules, @types"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",

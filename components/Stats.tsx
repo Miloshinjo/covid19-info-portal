@@ -1,6 +1,6 @@
 import Card from './NumbersCard';
 import useFetchData from '../hooks/useFetchData';
-import useTranslation from 'next-translate/useTranslation';
+const useTranslation = require('next-translate').useTranslation;
 
 type Props = {
   url: string;

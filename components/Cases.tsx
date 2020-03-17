@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import useTranslation from 'next-translate/useTranslation';
 
 import Stats from '../components/Stats';
 import CountrySelector from '../components/CountrySelector';
+const useTranslation = require('next-translate').useTranslation;
 
 type Props = {
   countries: string[];

@@ -1,9 +1,8 @@
-import useTranslation from 'next-translate/useTranslation';
-
 import SymptomCard from './SymptomCard';
 import CoughIcon from './icons/Cough';
 import FeverIcon from './icons/Fever';
 import LungsIcon from './icons/Lungs';
+const useTranslation = require('next-translate').useTranslation;
 
 export default function Symptoms() {
   const { t } = useTranslation();

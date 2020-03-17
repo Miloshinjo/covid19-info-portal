@@ -1,5 +1,3 @@
-import useTranslation from 'next-translate/useTranslation';
-
 import MeasureCard from './MeasureCard';
 import WashHandsIcon from './icons/WashHands';
 import SocialDistancingIcon from './icons/SocialDistancing';
@@ -7,6 +5,9 @@ import TouchEyeIcon from './icons/TouchEye';
 import ShakeHandsIcon from './icons/ShakeHands';
 import VentilationIcon from './icons/Ventilation';
 import ClipboardIcon from './icons/Clipboard';
+
+// import useTranslation from 'next-translate/useTranslation';
+const useTranslation = require('next-translate').useTranslation;
 
 export default function Measures() {
   const { t } = useTranslation();

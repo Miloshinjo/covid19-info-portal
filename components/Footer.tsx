@@ -1,4 +1,4 @@
-import useTranslation from 'next-translate/useTranslation';
+const useTranslation = require('next-translate').useTranslation;
 
 export default function Footer() {
   const { t } = useTranslation();

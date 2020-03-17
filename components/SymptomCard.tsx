@@ -1,5 +1,3 @@
-import CoughIcon from './icons/Cough';
-
 type Props = {
   title: string;
   icon: JSX.Element;
