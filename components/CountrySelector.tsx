@@ -9,7 +9,7 @@ type Props = {
 export default function CountrySelector({ countries, setUrl }: Props) {
   const { t } = useTranslation();
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Worldwide') {
+    if (e.target.value === 'Worldwide' || e.target.value === 'Ceo svet') {
       setUrl(`https://covid19.mathdro.id/api`);
       return;
     }
