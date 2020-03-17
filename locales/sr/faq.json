@@ -22,11 +22,11 @@
   },
   "antibiotics": {
     "q": "Da li su antibiotici efektivni u sprečavanju i lečenju COVID-19?",
-    "a": "Ne. Antibiotici nisu efektivni protiv virusa, oni rade samo na bakterijske infekcije. Antibiotici ne mogu da spreče ili leče bolest COVID-19, zato što COVID-19 izaziva virus, a ne bakterija. Konsultujte lekara pre nego što uzmete bilo kakav lek."
+    "a": "Ne. Antibiotici nisu efektivni protiv virusa, oni rade samo na bakterijskim infekcijama. Antibiotici ne mogu da spreče ili leče bolest COVID-19, zato što COVID-19 izaziva virus, a ne bakterija. Konsultujte lekara pre nego što uzmete bilo kakav lek."
   },
   "boostImmuneSystem": {
     "q": "Kako da ojačam imuni sistem?",
-    "a": "San je jedan od najvažnijih faktora, tako da 8 sati sna svaki dan je dosta bitno. Raznovrsna i nepreterana ishrana sa dosta nutrijenata je takođe bitan faktor. Uzimanje vitamina i minerala pomaže u jačanju imuniteta, naročito vitamin C, vitamin D, vitamin E, selen i cink."
+    "a": "San je jedan od najvažnijih faktora, tako da 8 sati sna svakog dana je dosta bitno. Raznovrsna i nepreterana ishrana sa dosta nutrijenata je takođe bitan faktor. Uzimanje vitamina i minerala pomaže u jačanju imuniteta, naročito vitamin C, vitamin D, vitamin E, selen i cink."
   },
   "getItAgain": {
     "q": "Ako se oporavim od COVID-19, mogu li da se opet zarazim?",
