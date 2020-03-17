@@ -12,7 +12,8 @@
     "next": "^9.3.0",
     "next-translate": "^0.11.1",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-ga": "^2.7.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",

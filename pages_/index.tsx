@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import axios from 'axios';
+import ReactGA from 'react-ga';
 
 import Header from '../components/Header';
 import Cases from '../components/Cases';
@@ -12,6 +14,11 @@ type Props = {
 };
 
 export default function HomePage({ countries }: Props) {
+  useEffect(() => {
+    ReactGA.initialize('UA-160988414-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
+
   return (
     <main>
       <Header />
