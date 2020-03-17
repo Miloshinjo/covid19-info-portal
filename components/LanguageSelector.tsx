@@ -15,15 +15,16 @@ export default function CountrySelector() {
   };
 
   return (
-    <div className="relative md:w-1/6">
+    <div className="relative w-1/5">
       <select
         onChange={handleChange}
-        className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-sm"
+        className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-xs md:text-sm"
         value={value}
       >
         <option value="en">English</option>
         <option value="sr">Srpski</option>
       </select>
+
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
         <svg
           className="fill-current h-4 w-4"
