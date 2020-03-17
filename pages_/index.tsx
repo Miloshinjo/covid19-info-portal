@@ -13,7 +13,7 @@ type Props = {
 
 export default function HomePage({ countries }: Props) {
   return (
-    <main className="border-t-4 border-teal-500">
+    <main>
       <Header />
       <Cases countries={countries} />
       <Symptoms />
