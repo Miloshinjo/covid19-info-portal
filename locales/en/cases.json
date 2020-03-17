@@ -3,5 +3,6 @@
   "confirmed": "Confirmed",
   "recovered": "Recovered",
   "fatal": "Fatal",
-  "worldwide": "Worldwide"
+  "worldwide": "Worldwide",
+  "lastUpdated": "Last updated"
 }

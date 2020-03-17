@@ -1,13 +1,13 @@
 import Card from './NumbersCard';
-import useFetchData from '../hooks/useFetchData';
 const useTranslation = require('next-translate').useTranslation;
 
 type Props = {
-  url: string;
+  stats: any;
+  fetching: boolean;
+  error: any;
 };
 
-export default function Stats({ url }: Props) {
-  const [stats, fetching, error] = useFetchData(url);
+export default function Stats({ stats, fetching, error }: Props) {
   const { t } = useTranslation();
 
   return (
