@@ -1,0 +1,63 @@
+{
+  "title": "Često postavljana pitanja",
+  "isThereVaccine": {
+    "q": "Da li postoji vakcina?",
+    "a": "Trenutno ne postoji vakcina za COVID-19."
+  },
+  "howIsSpread": {
+    "q": "Kako se COVID-19 širi i koji su simptomi?",
+    "a": "COVID-19 se uglavnom širi preko respiratornih kapljica, što znači da bi osoba dobila infekciju, mora biti na dva metra od nekog ko je zaražen i da dođe u kontakt sa tim kapljicama. Moguće je da osoba dobije COVID-19 dodirivanjem povšine ili objekta na kome je virus prisutan i onda pitanjem svojih usta, nosa ili očiju, ali ovo nije primarni način na koji se virus prenosi. Simptomi mogu da se pojave u roku od 2 do 14 dana posle izlaganja i uključuju povišenu temperaturu, kašalj, curenje iz nosa i otežano disanje."
+  },
+  "howLongSymptomsToAppear": {
+    "q": "Koliko vremena je potrebno da bi se simptomi COVID-19 pojavili?",
+    "a": "Simptomi COVID-19 mogu da se pojave čak i za 2 dana, a mogu i 14 dana posle izlaganja virusu. Da bi bili sigurne, vlade mnogih zemalja zahtevaju preiod izolacije od 14 dana za ljude koji se vraćaju iz zemalja koje su epicentri zaraze."
+  },
+  "howIsTreated": {
+    "q": "Kako se COVID-19 leči?",
+    "a": "Trenutno ne postoji lek koji specifično leči COVID-10. Ljudi sa COVID-19 treba da dobiju neku koja će im pomoći da olakšaju simptome. Za ljude sa laboratorijskim potvrđenim virusom COVID-19 bolest može da ide od blagih simptoma do teške bolesti i smrti. Za teže slučajeve, lečenje uključuje negu da bi se podržale funkcije vitalnih organa. Zatražite medicinsku pomoć ako vam se simptomi pogoršaju (npr. ako imate otežano disanje). Pre odlaska kod doktora, uvek prvo pozovite telefonom i recite im simptome i ako sumnjate na COVID-19. Stavite masku za lice pre nego što uđete kod doktora, u kliniku ili bolnicu."
+  },
+  "deathRate": {
+    "q": "Koja je stopa smrtnosti ovog virusa",
+    "a": "Trenutno, stopa smrtnosti varira između 1-5%. Mada, ove procene su zasnovane samo na potvđenim slučajevima infekcije, što nije reprezentativno za stvarnu stopu smrtnosti."
+  },
+  "antibiotics": {
+    "q": "Da li su antibiotici efektivni u sprečavanju i lečenju COVID-19?",
+    "a": "Ne. Antibiotici nisu efektivni protiv virusa, oni rade samo na bakterijske infekcije. Antibiotici ne mogu da spreče ili leče bolest COVID-19, zato što COVID-19 izaziva virus, a ne bakterija. Konsultujte lekara pre nego što uzmete bilo kakav lek."
+  },
+  "boostImmuneSystem": {
+    "q": "Kako da ojačam imuni sistem?",
+    "a": "San je jedan od najvažnijih faktora, tako da 8 sati sna svaki dan je dosta bitno. Raznovrsna i nepreterana ishrana sa dosta nutrijenata je takođe bitan faktor. Uzimanje vitamina i minerala pomaže u jačanju imuniteta, naročito vitamin C, vitamin D, vitamin E, selen i cink."
+  },
+  "getItAgain": {
+    "q": "Ako se oporavim od COVID-19, mogu li da se opet zarazim?",
+    "a": "Verovatno ne. Neki pacijenti su opet imali pozitivne testove posle oporavka, ali to je verovatno bilo uklanjanje simptoma i virus još nije napustio njihova tela. Dalje istraživanje će dati 100% tačan odogovr na ovo pitanje."
+  },
+  "ibuprofen": {
+    "q": "Čuli smo da antiinflamatorni lekovi na bazi ibuprofena ili kortizona ne bi trebalo da se uzimaju za lečenje simptima COVID19, da li je to istina?",
+    "a": "Verovatno je istina. Ovo se još istražuje, ali francusko ministarstvo zdravlja je upozorilo protiv korišćenja takvih lekova jer mogu da dovedu do komplikacija sa virusom, čak i nekih sa smrtnim ishodom. Naše telo diže temperaturu tokom infekcija da bi se što efikasnije izborilo protiv istih. Najbolje i najbezbednije je savetovati se sa vašim doktorom pre uzimanja bilo kakvih lekova."
+  },
+  "zinc": {
+    "q": "Čuli smo da cink može da spreči širenje virusa u telu, da li je to istina?",
+    "a": "Nije. Cink može da ojača imuni sistem ali nema studije koja potvrđuje da može da vas zaštiti od virusa COVID-19."
+  },
+  "disinfectantSprays": {
+    "q": "Mogu li kućna sredstva ili maramice za dezinfekciju da se koriste na koži da bi sprečili širenje COVID-19 virusa?",
+    "a": "Ne. Uvek pratite uputstva na sredstvima za kućnu higijenu. Ne koristite sredstva ili maramice za dezinfekciju na koži jer mogu da dovedu do iritacije kože ili oka. Sredstva za kućnu higijenu nisu namenjena da se koriste na ljudima i životinjama, njihova namena je da se koriste na tvrdim i nepromočivim podlogama."
+  },
+  "importedGoodsFromChina": {
+    "q": "Da li mogu da dobijem COVID-19 od robe uvezene iz Kine?",
+    "a": "Trenutno, nema dokaza koji bi podržali širenje COVID-19 povezano sa robom uvezenom iz kine, uključujući hranu i lekove za ljude i životinje. Ne postoji trenutno nijedan slučaj COVID-19 povezan sa uvezenom robom. Temperatura vazduha koja je oko paketa tokom prenošenja nije dobro okruženje za viruse da opstanu."
+  },
+  "youngAndHealthy": {
+    "q": "Ja sam mlada i zdrava osoba, zašto bih se ja brinuo/la toliko o ovoj bolesti ako nije tolika pretnja za mene?",
+    "a": "Kao prvo, bilo koja nova bolest je velika pretnja za svakog, posebno relativno nepoznati respiratorni virus koji napada pluća. Drugo, ne želimo da zarazimo druge ljude sa kojima dolazimo u kontakt. Treće i najvažnije, ne želimo da preopteretimo naš zdravstveni sistem. Ako se mnogo ljudi razboli, neće biti dovoljno bolničkih kapaciteta da bi se prokrili svi kritični slučajevi i doći će do veće smrtnosti. Svako bi trebalo da se čuva ove bolesti da bi se ona što pre zaustavila."
+  },
+  "riskGroups": {
+    "q": "Koje su najveće rizične grupe od ovog virusa?",
+    "a": "Najrizičnija grupa su ljudi sa oslabljenim imunim sistemom, kao što su ljudi koji se leče od raka, HIV-a, autoimunih bolesti ili su imali transplantaciju nekog ograna. Druge rizične grupe uključuju starije osobe, pacijente sa hroničnim bolestima, trudne žene, pušače i ljude sa povišenom telesnom težinom."
+  },
+  "masks": {
+    "q": "Da li maske pomažu?",
+    "a": "Maska ne može da vas zaštiti od infekcije virusom. Ali ako ste bolesni, treba da nosite masku da biste umanjili rizk po druge ljude sa kojima delite dom, auto ili kada idete kod doktora. Ako niste bolesni, ne morate da nosite maske, sem ako ne brinete o nekom ko je bolestan. Maski trenutno nema mnogo i treba da se čuvaju najviše za medicinsko osoblje."
+  }
+}

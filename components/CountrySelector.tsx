@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, ChangeEvent } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 type Props = {
   countries: string[];
@@ -6,6 +7,7 @@ type Props = {
 };
 
 export default function CountrySelector({ countries, setUrl }: Props) {
+  const { t } = useTranslation();
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === 'Worldwide') {
       setUrl(`https://covid19.mathdro.id/api`);
@@ -20,7 +22,7 @@ export default function CountrySelector({ countries, setUrl }: Props) {
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       >
-        <option>Worldwide</option>
+        <option>{t`cases:worldwide`}</option>
         <option disabled>---</option>
         {countries.map((country: string) => (
           <option key={country} value={country}>

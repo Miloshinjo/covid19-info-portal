@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next-translate && next dev",
+    "build": "next-translate && next build",
     "start": "next start"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "next": "^9.3.0",
+    "next-translate": "^0.11.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },

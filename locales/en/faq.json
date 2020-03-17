@@ -1,0 +1,63 @@
+{
+  "title": "Frequently asked questions",
+  "isThereVaccine": {
+    "q": "Is there a vaccine?",
+    "a": "Currently, there is no vaccine available."
+  },
+  "howIsSpread": {
+    "q": "How does COVID-19 spread and what are the symptoms?",
+    "a": "COVID-19 is primarily spread through respiratory droplets, which means to become infected, people generally must be within six feet of someone who is contagious and come into contact with these droplets. It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads. Symptoms of COVID-19 appear within two to 14 days after exposure and include fever, cough, runny nose and difficulty breathing."
+  },
+  "howLongSymptomsToAppear": {
+    "q": "How long does it take for symptoms of the COVID-19 to appear?",
+    "a": "Symptoms of COVID-19 may appear in as few as two days, or as long as 14 days after exposure. To be cautious, many governments are requiring an isolation period of 14 days for people returning from endemic areas."
+  },
+  "howIsTreated": {
+    "q": "How is COVID-19 treated?",
+    "a": "There is currently no approved medication for COVID-19. People with COVID-19 should receive supportive care to help relieve symptoms. For people with laboratory confirmed COVID-19, illnesses have ranged from mild symptoms to severe illness and death. For severe illness, treatment should include care to support vital organ functions. Seek prompt medical attention if your illness gets worse (for example, you have difficulty breathing). Before seeking medical attention, call your health care provider and tell them that you have, or are being evaluated for, COVID-19. Put on a facemask before you enter the doctor’s office, clinic, or hospital."
+  },
+  "deathRate": {
+    "q": "What is the mortality rate for this virus?",
+    "a": "At the moment, mortality rate is reported to be between 1-5%. However, these estimates are only based on confirmed cases of infection, which is not representative of the actual death rate."
+  },
+  "antibiotics": {
+    "q": "Are antibiotics effective in preventing or treating COVID-19?",
+    "a": "No. Antibiotics do not work against viruses, they only work on bacterial infections. Antibiotics do not prevent or treat coronavirus disease (COVID-19), because COVID-19 is caused by a virus, not bacteria."
+  },
+  "boostImmuneSystem": {
+    "q": "How can I boost my immune system?",
+    "a": "Sleep is one of the most important factors, so make sure to sleep at least 8 hours every day. Balanced diet with lots of nutrients also boost your immunity. Make sure to have enough vitamins and minerals, especially Vitamin C, Vitamin D, Vitamin E, Selenium and Zinc."
+  },
+  "getItAgain": {
+    "q": "If I recover from COVID-19 can I get it again?",
+    "a": "Probably not. Some patients tested positive after recovering, but that was probably just removal of symptoms but virus hasn't left their bodies yet. Data is yet to show this point with 100% certanty."
+  },
+  "ibuprofen": {
+    "q": "I heard that I shouldn't take anti-inflammatory meds such as ibuprofen or cortisone to treat symptoms of COVID-19, is that true?",
+    "a": "Probably true. Data is still coming in on this claim, but the French Ministry of Health has warned against using such medications as they can lead to more complications with the virus, even fatal outcomes. We also have to understand that our body raises it's core temeprature during infections in order to better fight against it. Best and safest idea is to consult your doctor before taking any medications."
+  },
+  "zinc": {
+    "q": "I heard that Zinc can stop the spread of the virus in the body, is that true?",
+    "a": "False. Zinc may boost your immune system, but there is no study that confirms that it will protect you from getting COVID-19."
+  },
+  "disinfectantSprays": {
+    "q": "Can disinfectant sprays or wipes be used on my skin to prevent spread of COVID-19?",
+    "a": "No. Always follow the instructions on household cleaners. Do not use disinfect sprays or wipes on your skin because it may cause skin and eye irritation. Disinfectant sprays or wipes are not intended for use on humans or animals. Disinfectant sprays or wipes are intended for use on hard, non-porous surfaces."
+  },
+  "importedGoodsFromChina": {
+    "q": "Can I get COVID-19 from imported goods from China?",
+    "a": "Currently, there is no evidence to support transmission of COVID-19 associated with imported goods, including food and drugs for humans and pets. There have not been any cases of COVID-19 associated with imported goods. The temperature of the air surrounding the packages and projects during shipping is not considered conducive to viral viability."
+  },
+  "youngAndHealthy": {
+    "q": "I am a young, healthy person, why should I care about getting this disease if it's not such a big threat for me?",
+    "a": "First off, any disease is a big threat to anyone, especially a new respiratory virus that attacks one's lungs. Second, we don't want to infect other people we come into contact with. Third, and most imporant reason, we don't want to put strain on our hospitals. If many many people get sick, there won't be enough hospital capacity to cover all the critical cases. So anyone should take care of themselves and follow the rules not to get infected in order to stop this disease quick."
+  },
+  "riskGroups": {
+    "q": "Which groups are at biggest risk of this virus?",
+    "a": "Biggest risk groups are the people with weak immune systems, like cancer, HIV, autoimmune disease and organ transplant patients. Other risk groups include elderly, patients with chronic diseases, pregnant women, smokers and overweight people."
+  },
+  "masks": {
+    "q": "Do masks help?",
+    "a": "Mask can't protect you from getting infected. If you are sick, you should wear a mask to minimize the risk to other people that you share a room with or a vechile or before you go to the doctor's office. If you are not sick, you do not need to wear a facemask unless you are caring for someone who is sick. Facemasks are in short supply and should be saved for caregivers."
+  }
+}

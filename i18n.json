@@ -1,0 +1,10 @@
+{
+  "allLanguages": ["en", "sr"],
+  "defaultLanguage": "en",
+  "currentPagesDir": "pages_",
+  "finalPagesDir": "pages",
+  "localesPath": "locales",
+  "pages": {
+    "/": ["cases", "measures", "faq", "symptoms", "footer"]
+  }
+}

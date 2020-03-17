@@ -1,0 +1,27 @@
+{
+  "title": "Šta možete učiniti da se žaštitite",
+  "socialDistancing": {
+    "title": "Socijalno distanciranje",
+    "paragraph": "Ostanite kući ako ste u mogućnosti. To je najbolji način da izbegnete infekciju. Ako ste u mogućnosti, radite od kuće. Izlazite napolje samo za hranu i lekove."
+  },
+  "washHands": {
+    "title": "Perite ruke",
+    "paragraph": "Često pranje ruku sa sapunom i vodom i to u trajanju od 15-20 sekundi. Ako sapun i voda nisu dostupni, korisite sredstsvo za dezinfekciju sa minimum 60% alkohola."
+  },
+  "dontTouchFace": {
+    "title": "Ne pipajte lice",
+    "paragraph": "Držite ruke dalje od očiju, nosa i usta da biste sprečili mogući prelazak virusa sa vasših ruku kroz membranu sluzokože."
+  },
+  "dontShakeHands": {
+    "title": "Ne rukujte se",
+    "paragraph": "Dok epidemija traje, držite distancu i izbegavajte ljudski kontakt. Koristite druge metode javljanja, i držite distancu minimum tri metra."
+  },
+  "ventilate": {
+    "title": "Provetravajte dom",
+    "paragraph": "Povećajte protok vazduha u vasšem domu tako što ćete otvoriti prozore i/ili podesiti klima uređaje. Dobro provetravanje je bitno jer smanjuje širenje patogena."
+  },
+  "immunity": {
+    "title": "Ojačajte imuni sistem",
+    "paragraph": "Najbolje je da se uvek dobro naspavate, jedete zdravo i raznovrsno, unosite dovoljno vitamina i minerala i da radite vežbe kod kuće ako ste u mogućnosti."
+  }
+}

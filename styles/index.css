@@ -19,7 +19,7 @@
 }
 
 .section {
-  @apply pb-12 mb-4;
+  @apply mb-10;
 }
 
 .section__header {
