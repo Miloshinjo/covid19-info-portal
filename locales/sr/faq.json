@@ -6,7 +6,7 @@
   },
   "howIsSpread": {
     "q": "Kako se COVID-19 širi i koji su simptomi?",
-    "a": "COVID-19 se uglavnom širi preko respiratornih kapljica, što znači da bi osoba dobila infekciju, mora biti na dva metra od nekog ko je zaražen i da dođe u kontakt sa tim kapljicama. Moguće je da osoba dobije COVID-19 dodirivanjem povšine ili objekta na kome je virus prisutan i onda pitanjem svojih usta, nosa ili očiju, ali ovo nije primarni način na koji se virus prenosi. Simptomi mogu da se pojave u roku od 2 do 14 dana posle izlaganja i uključuju povišenu temperaturu, kašalj, curenje iz nosa i otežano disanje."
+    "a": "COVID-19 se uglavnom širi preko respiratornih kapljica, što znači da bi osoba dobila infekciju, mora biti na dva metra od nekog ko je zaražen i da dođe u kontakt sa tim kapljicama. Moguće je da osoba dobije COVID-19 dodirivanjem povšine ili objekta na kome je virus prisutan i onda pipanjem svojih usta, nosa ili očiju, ali ovo nije primarni način na koji se virus prenosi. Simptomi mogu da se pojave u roku od 2 do 14 dana posle izlaganja i uključuju povišenu temperaturu, kašalj, curenje iz nosa i otežano disanje."
   },
   "howLongSymptomsToAppear": {
     "q": "Koliko vremena je potrebno da bi se simptomi COVID-19 pojavili?",
