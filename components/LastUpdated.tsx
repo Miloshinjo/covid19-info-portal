@@ -18,7 +18,7 @@ export default memo(function LastUpdated({ lastUpdated }: Props) {
   }
 
   return (
-    <div className="text-center mt-2 text-sm">
+    <div className="text-center mt-2 text-xs">
       {t`cases:lastUpdated`}: {formattedLastUpdated}
     </div>
   );
