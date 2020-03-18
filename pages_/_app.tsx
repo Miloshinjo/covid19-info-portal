@@ -14,6 +14,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           key="viewport"
         />
         <meta name="description" content="COVID-19 information in one place" />
+        <meta
+          name="google-site-verification"
+          content="2xafql5NclP0ABx35guQ4K6ZTrPcpttVZAQdRXXO0Hk"
+        />
       </Head>
       <Component {...pageProps} />{' '}
     </>
