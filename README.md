@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a basic website to give some info about new corona virus disease. It's currently using the API build by mathdroid [https://github.com/mathdroid/covid-19-api](https://github.com/mathdroid/covid-19-api).
+This is a basic website to give some info about new corona virus disease. It's currently using the API built by mathdroid [https://github.com/mathdroid/covid-19-api](https://github.com/mathdroid/covid-19-api).
 
 Frontend stack is next.js and tailwind css.
 
