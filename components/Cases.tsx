@@ -27,9 +27,7 @@ export default function Cases() {
     'https://coronavirus-19-api.herokuapp.com/countries'
   );
 
-  const [selectedCountry, setSelectedCountry] = useState<Country | undefined>(
-    undefined
-  );
+  const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
 
   return (
     <section className="section">

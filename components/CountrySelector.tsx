@@ -23,11 +23,11 @@ export default function CountrySelector({
   const [value, setValue] = useState<string>('');
 
   useEffect(() => {
-    const countryJson = localStorage.getItem('selectedCountry');
+    const countryJson: string | null = localStorage.getItem('selectedCountry');
 
     if (countryJson) {
       setSelectedCountry(JSON.parse(countryJson));
-      setValue(JSON.parse(countryJson).country);
+      setValue(JSON.parse(countryJson)?.country);
     }
   }, []);
 
@@ -45,9 +45,15 @@ export default function CountrySelector({
       (country: Country) => e.target.value === country.country
     );
 
-    setValue(selectedCountry?.country);
-    setSelectedCountry(selectedCountry);
-    localStorage.setItem('selectedCountry', JSON.stringify(selectedCountry));
+    if (selectedCountry) {
+      setValue(selectedCountry.country);
+      setSelectedCountry(selectedCountry);
+      localStorage.setItem('selectedCountry', JSON.stringify(selectedCountry));
+    } else {
+      setValue('');
+      setSelectedCountry(null);
+      localStorage.removeItem('selectedCountry');
+    }
   };
 
   return (
