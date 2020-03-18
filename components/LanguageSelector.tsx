@@ -17,6 +17,7 @@ export default function CountrySelector() {
   return (
     <div className="relative w-1/5">
       <select
+        aria-label="Change the website language"
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-xs md:text-sm"
         value={value}
