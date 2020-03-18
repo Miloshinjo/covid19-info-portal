@@ -8,7 +8,7 @@ export default function Symptoms() {
   const { t } = useTranslation();
 
   return (
-    <section className="section">
+    <section className="mb-8">
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="section__header">{t`symptoms:title`}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
