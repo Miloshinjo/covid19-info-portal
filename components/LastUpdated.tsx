@@ -1,6 +1,5 @@
 import { memo } from 'react';
 import dayjs from 'dayjs';
-import Loading from './Loading';
 
 const useTranslation = require('next-translate').useTranslation;
 
