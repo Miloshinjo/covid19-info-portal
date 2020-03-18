@@ -1,9 +1,34 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentProps
+} from 'next/document';
 
-class MyDocument extends Document {
+type Props = {
+  props: DocumentProps;
+  locale: string;
+};
+
+class MyDocument extends Document<Props> {
+  static async getInitialProps(ctx: any) {
+    let locale = 'en';
+
+    if (ctx.pathname) {
+      const [, lang] = ctx.pathname.split('/');
+
+      if (lang !== '_error' && lang) locale = lang;
+    }
+
+    const initialProps = await Document.getInitialProps(ctx);
+
+    return { ...initialProps, locale };
+  }
+
   render() {
     return (
-      <Html>
+      <Html lang={this.props.locale}>
         <Head>
           <link
             rel="apple-touch-icon"
