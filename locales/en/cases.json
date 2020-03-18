@@ -3,7 +3,9 @@
   "confirmed": "Confirmed",
   "recovered": "Recovered",
   "fatal": "Fatal",
-  "unresolved": "Unresolved",
+  "unresolved": "Active",
   "worldwide": "Worldwide",
-  "lastUpdated": "Last updated"
+  "source": "Data source",
+  "today": "Today",
+  "critical": "Critical"
 }

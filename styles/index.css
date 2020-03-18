@@ -6,7 +6,6 @@
 
 .loading-spinner {
   animation: infinite-spinning 2s infinite;
-  @apply fill-current text-gray-900 h-8 w-8 m-2;
 }
 
 @keyframes infinite-spinning {

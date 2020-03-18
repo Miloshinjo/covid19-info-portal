@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "dayjs": "^1.8.23",
     "next": "^9.3.0",
     "next-translate": "^0.11.1",
     "react": "^16.13.0",
