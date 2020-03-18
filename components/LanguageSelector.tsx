@@ -8,8 +8,11 @@ export default function CountrySelector() {
     if (e.target.value === 'en') {
       router.push('/');
       setValue(e.target.value);
+      localStorage.setItem('lang', 'en');
       return;
     }
+
+    localStorage.setItem('lang', e.target.value);
     router.push(`/${e.target.value}`);
     setValue(e.target.value);
   };
