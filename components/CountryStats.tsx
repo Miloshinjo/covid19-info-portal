@@ -9,7 +9,6 @@ type Props = {
 
 export default function CountryStats({ country, fetching, error }: Props) {
   const { t } = useTranslation();
-  console.log(country);
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Stats from '../components/Stats';
 import CountryStats from '../components/CountryStats';
@@ -26,8 +26,6 @@ export default function Cases() {
   const [countryInfo, fetchingCountryInfo, countryInfoError] = useFetchData(
     'https://coronavirus-19-api.herokuapp.com/countries'
   );
-
-  console.log(countryInfo);
 
   const [selectedCountry, setSelectedCountry] = useState<Country | undefined>(
     undefined

@@ -1,4 +1,10 @@
-import { ChangeEvent, Dispatch, SetStateAction } from 'react';
+import {
+  ChangeEvent,
+  Dispatch,
+  SetStateAction,
+  useState,
+  useEffect
+} from 'react';
 import Loading from '../components/Loading';
 import { Country } from './Cases';
 
@@ -14,32 +20,43 @@ export default function CountrySelector({
   setSelectedCountry
 }: Props) {
   const { t } = useTranslation();
+  const [value, setValue] = useState<string>('');
+
+  useEffect(() => {
+    const countryJson = localStorage.getItem('selectedCountry');
+
+    if (countryJson) {
+      setSelectedCountry(JSON.parse(countryJson));
+      setValue(JSON.parse(countryJson).country);
+    }
+  }, []);
 
   if (!countries)
     return (
       <div className="relative mb-8 w-full md:w-1/2">
         <div className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-          <Loading size={2} />
+          <Loading size={4} />
         </div>
       </div>
     );
-
-  console.log(countries);
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedCountry: any = countries.find(
       (country: Country) => e.target.value === country.country
     );
 
+    setValue(selectedCountry?.country);
     setSelectedCountry(selectedCountry);
-    localStorage.setItem('selectedCountry', selectedCountry.country);
+    localStorage.setItem('selectedCountry', JSON.stringify(selectedCountry));
   };
+
   return (
     <div className="relative mb-8 w-full md:w-1/2">
       <select
         aria-label="Select country to load information for"
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        value={value}
       >
         <option>{t`cases:worldwide`}</option>
         <option disabled>---</option>
