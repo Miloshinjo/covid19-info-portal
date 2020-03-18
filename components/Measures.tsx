@@ -15,7 +15,7 @@ export default function Measures() {
   return (
     <section className="bg-teal-500 text-white pb-4">
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
-        <h2 className="font-medium mb-2 text-xl uppercase">
+        <h2 className="font-medium mb-2 text-xl uppercase print__font-black">
           {t`measures:title`}
         </h2>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8">

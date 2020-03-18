@@ -7,7 +7,7 @@ export default function FAQ() {
   return (
     <section className="bg-gray-900 text-white">
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
-        <h2 className="font-medium mb-2 text-xl uppercase">{t`faq:title`}</h2>
+        <h2 className="font-medium mb-2 text-xl uppercase print__font-black">{t`faq:title`}</h2>
         <Question
           question={t`faq:isThereVaccine.q`}
           answer={t`faq:isThereVaccine.a`}

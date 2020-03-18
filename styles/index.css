@@ -30,3 +30,14 @@
   /* @apply bg-white shadow-lg rounded-lg; */
   @apply bg-white shadow rounded-lg;
 }
+
+@media print {
+  .print__measure-icon,
+  .print__symptom-icon {
+    display: none;
+  }
+
+  .print__font-black {
+    color: #1a202c !important;
+  }
+}

@@ -27,7 +27,6 @@ class MyDocument extends Document<Props> {
   }
 
   render() {
-    console.log(this.props.locale);
     return (
       <Html lang={this.props.locale}>
         <Head>
