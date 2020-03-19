@@ -1,0 +1,11 @@
+{
+  "title": "Known cases",
+  "confirmed": "Confirmed",
+  "recovered": "Recovered",
+  "fatal": "Fatal",
+  "unresolved": "Active",
+  "worldwide": "Worldwide",
+  "source": "Data source",
+  "today": "Today",
+  "critical": "Critical"
+}

@@ -66,11 +66,21 @@ export default function CountrySelector({
       >
         <option>{t`cases:worldwide`}</option>
         <option disabled>---</option>
-        {countries.map((country: any) => (
-          <option key={country.country} value={country.country}>
-            {country.country}
-          </option>
-        ))}
+        {countries
+          .sort((a: Country, b: Country) => {
+            if (a.country < b.country) {
+              return -1;
+            }
+            if (a.country > b.country) {
+              return 1;
+            }
+            return 0;
+          })
+          .map((country: any) => (
+            <option key={country.country} value={country.country}>
+              {country.country}
+            </option>
+          ))}
       </select>
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
         <svg
