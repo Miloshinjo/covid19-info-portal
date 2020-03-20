@@ -123,6 +123,11 @@ const countriesTranslations: any = {
     en: 'Taiwan',
     sr: 'Tajvan',
     de: 'Taiwan'
+  },
+  Togo: {
+    en: 'Togo',
+    sr: 'Togo',
+    de: 'Togo'
   }
 };
 
