@@ -59,5 +59,9 @@
   "masks": {
     "q": "Do masks help?",
     "a": "Mask can't protect you from getting infected. If you are sick, you should wear a mask to minimize the risk to other people that you share a room with or a vechile or before you go to the doctor's office. If you are not sick, you do not need to wear a facemask unless you are caring for someone who is sick. Facemasks are in short supply and should be saved for caregivers."
+  },
+  "surfaces": {
+    "q": "How long does virus stay on hard surfaces and material?",
+    "a": "We have to assume that virus stays on hard surfaces (witout direct sunlight) for about 3-4 days. Data is yet inconclusive on this point. On softer surfaces like fabrics it is assumed that it can stay for several hours."
   }
 }

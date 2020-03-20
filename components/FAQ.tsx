@@ -50,6 +50,7 @@ export default function FAQ(): JSX.Element {
         />
         <Question question={t`faq:riskGroups.q`} answer={t`faq:riskGroups.a`} />
         <Question question={t`faq:masks.q`} answer={t`faq:masks.a`} />
+        <Question question={t`faq:surfaces.q`} answer={t`faq:surfaces.a`} />
       </div>
     </section>
   );

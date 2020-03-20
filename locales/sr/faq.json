@@ -59,5 +59,9 @@
   "masks": {
     "q": "Da li maske pomažu?",
     "a": "Maska ne može da vas zaštiti od infekcije virusom. Ali ako ste bolesni, treba da nosite masku da biste umanjili rizk po druge ljude sa kojima delite dom, auto ili kada idete kod doktora. Ako niste bolesni, ne morate da nosite maske, sem ako ne brinete o nekom ko je bolestan. Maski trenutno nema mnogo i treba da se čuvaju najviše za medicinsko osoblje."
+  },
+  "surfaces": {
+    "q": "Koliko se virus dugo zadržava na raznim površinama?",
+    "a": "Moramo da pretpostavimo da se virus zadržava na tvrdim površinama (bez direktne sunčeve svetlosti) oko 3 do 4 dana. Ovo pitanje se još istražuje. Na mekim površinama kao što je tkanina, virus se može zadržati nekoliko sati."
   }
 }
