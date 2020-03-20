@@ -27,28 +27,28 @@ export default function CountryStats({
         <Card
           title={t`cases:recovered`}
           value={country?.recovered}
-          textColor="text-teal-500"
+          textColor="text-teal-600"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:fatal`}
           value={country?.deaths}
-          textColor="text-red-400"
+          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:unresolved`}
           value={country?.cases - country?.deaths - country?.recovered}
-          textColor="text-orange-400"
+          textColor="text-orange-600"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:critical`}
           value={country?.critical}
-          textColor="text-red-400"
+          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />
@@ -65,7 +65,7 @@ export default function CountryStats({
         <Card
           title={t`cases:fatal`}
           value={country?.todayDeaths}
-          textColor="text-red-400"
+          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />

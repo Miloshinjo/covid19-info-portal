@@ -23,7 +23,7 @@ export default function Stats({ stats, fetching, error }: Props): JSX.Element {
       <Card
         title={t`cases:recovered`}
         value={stats?.recovered}
-        textColor="text-teal-500"
+        textColor="text-teal-600"
         fetching={fetching}
         error={Boolean(error)}
       />

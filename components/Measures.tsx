@@ -12,7 +12,7 @@ export default function Measures(): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-teal-500 text-white pb-4">
+    <section className="bg-teal-600 text-white pb-4">
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="font-medium mb-2 text-xl uppercase print__font-black">
           {t`measures:title`}

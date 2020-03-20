@@ -16,7 +16,9 @@ export default function MeasureCard({
         <h4 className="font-semibold text-2xl leading-none mb-2 print__font-black">
           {title}
         </h4>
-        <p className="text-red-100 print__font-black">{paragraph}</p>
+        <p className="text-red-100 font-semibold print__font-black">
+          {paragraph}
+        </p>
       </div>
     </div>
   );
