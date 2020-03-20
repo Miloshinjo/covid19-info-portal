@@ -19,7 +19,7 @@ export default function HomePage(): JSX.Element {
   useEffect(() => {
     const lang: string | null = localStorage.getItem('lang');
 
-    if (lang === 'en') {
+    if (lang === 'en' || !lang) {
       router.push('/');
       return;
     }

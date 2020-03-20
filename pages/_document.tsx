@@ -3,7 +3,9 @@ import Document, {
   Head,
   Main,
   NextScript,
-  DocumentProps
+  DocumentProps,
+  DocumentContext,
+  DocumentInitialProps
 } from 'next/document';
 
 type Props = {
@@ -11,8 +13,12 @@ type Props = {
   locale: string;
 };
 
+interface InitialProps extends DocumentInitialProps {
+  locale: string;
+}
+
 class MyDocument extends Document<Props> {
-  static async getInitialProps(ctx: any) {
+  static async getInitialProps(ctx: DocumentContext): Promise<InitialProps> {
     let locale = 'en';
 
     if (ctx.pathname) {
@@ -26,7 +32,7 @@ class MyDocument extends Document<Props> {
     return { ...initialProps, locale };
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang={this.props.locale}>
         <Head>

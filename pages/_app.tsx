@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import '../styles/index.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
