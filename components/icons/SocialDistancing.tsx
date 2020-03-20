@@ -1,4 +1,8 @@
-export default function({ className }: { className?: string }) {
+export default function SocialDistancingIcon({
+  className
+}: {
+  className?: string;
+}): JSX.Element {
   return (
     <svg
       className={className}

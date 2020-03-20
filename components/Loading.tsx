@@ -4,7 +4,7 @@ type Props = {
   size?: number;
 };
 
-export default function Loading({ size = 8 }: Props) {
+export default function Loading({ size = 8 }: Props): JSX.Element {
   return (
     <div
       className={`loading-spinner fill-current text-gray-900 h-${size} w-${size} m-2`}

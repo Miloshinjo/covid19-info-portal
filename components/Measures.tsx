@@ -6,10 +6,9 @@ import ShakeHandsIcon from './icons/ShakeHands';
 import VentilationIcon from './icons/Ventilation';
 import ClipboardIcon from './icons/Clipboard';
 
-// import useTranslation from 'next-translate/useTranslation';
-const useTranslation = require('next-translate').useTranslation;
+const { useTranslation } = require('next-translate');
 
-export default function Measures() {
+export default function Measures(): JSX.Element {
   const { t } = useTranslation();
 
   return (

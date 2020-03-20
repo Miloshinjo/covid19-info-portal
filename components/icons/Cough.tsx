@@ -1,4 +1,8 @@
-export default function({ className }: { className?: string }) {
+export default function CoughIcon({
+  className
+}: {
+  className?: string;
+}): JSX.Element {
   return (
     <svg
       viewBox="0 0 128 128"

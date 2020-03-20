@@ -1,6 +1,6 @@
-const useTranslation = require('next-translate').useTranslation;
+const { useTranslation } = require('next-translate');
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   const { t } = useTranslation();
   return (
     <footer className="bg-gray-800 text-white text-sm text-center">

@@ -1,8 +1,8 @@
-const useTranslation = require('next-translate').useTranslation;
-
 import Question from './Question';
 
-export default function FAQ() {
+const { useTranslation } = require('next-translate');
+
+export default function FAQ(): JSX.Element {
   const { t } = useTranslation();
   return (
     <section className="bg-gray-900 text-white">

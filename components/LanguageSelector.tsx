@@ -1,10 +1,10 @@
 import { ChangeEvent, useState } from 'react';
 import { useRouter } from 'next/router';
 
-export default function CountrySelector() {
+export default function CountrySelector(): JSX.Element {
   const router = useRouter();
   const [value, setValue] = useState<string>(router.pathname.replace('/', ''));
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>): void => {
     if (e.target.value === 'en') {
       router.push('/');
       setValue(e.target.value);

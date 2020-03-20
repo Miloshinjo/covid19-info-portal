@@ -1,13 +1,15 @@
 import Card from './NumbersCard';
-const useTranslation = require('next-translate').useTranslation;
+import { StatsModel, ErrorModel } from '../models';
+
+const { useTranslation } = require('next-translate');
 
 type Props = {
-  stats: any;
+  stats: StatsModel;
   fetching: boolean;
-  error: any;
+  error: ErrorModel;
 };
 
-export default function Stats({ stats, fetching, error }: Props) {
+export default function Stats({ stats, fetching, error }: Props): JSX.Element {
   const { t } = useTranslation();
 
   return (

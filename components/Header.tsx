@@ -1,7 +1,7 @@
 import CoronaIcon from './icons/Corona';
 import LanguageSelector from './LanguageSelector';
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <header className="mx-auto py-8 flex flex-col justify-center border-t-4 border-teal-500">
       <div className="mx-auto flex items-center justify-between w-full px-4 lg:px-0 lg:w-1/2">

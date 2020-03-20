@@ -1,13 +1,19 @@
 import Card from './NumbersCard';
-const useTranslation = require('next-translate').useTranslation;
+import { CountryModel, ErrorModel } from '../models';
+
+const { useTranslation } = require('next-translate');
 
 type Props = {
-  country: any;
+  country: CountryModel;
   fetching: boolean;
-  error: any;
+  error: ErrorModel;
 };
 
-export default function CountryStats({ country, fetching, error }: Props) {
+export default function CountryStats({
+  country,
+  fetching,
+  error
+}: Props): JSX.Element {
   const { t } = useTranslation();
   return (
     <>

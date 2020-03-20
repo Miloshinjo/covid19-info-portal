@@ -1,6 +1,6 @@
-const useTranslation = require('next-translate').useTranslation;
+const { useTranslation } = require('next-translate');
 
-export default function DataSource() {
+export default function DataSource(): JSX.Element {
   const { t } = useTranslation();
   return (
     <div className="text-center mt-2 text-xs lowercase">

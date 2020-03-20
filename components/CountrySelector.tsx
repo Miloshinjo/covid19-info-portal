@@ -6,20 +6,20 @@ import {
   useEffect
 } from 'react';
 import Loading from '../components/Loading';
-import { Country } from './Cases';
+import { CountryModel } from '../models';
 import countriesTranslations from '../utils/countriesTranslations';
 
-const useTranslation = require('next-translate').useTranslation;
+const { useTranslation } = require('next-translate');
 
 type Props = {
-  countries: Country[];
-  setSelectedCountry: Dispatch<SetStateAction<null | any>>;
+  countries: CountryModel[] | undefined;
+  setSelectedCountry: Dispatch<SetStateAction<null | CountryModel>>;
 };
 
 export default function CountrySelector({
   countries,
   setSelectedCountry
-}: Props) {
+}: Props): JSX.Element {
   const { t, lang } = useTranslation();
   const [value, setValue] = useState<string>('');
 
@@ -41,9 +41,9 @@ export default function CountrySelector({
       </div>
     );
 
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const selectedCountry: any = countries.find(
-      (country: Country) => e.target.value === country.country
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>): void => {
+    const selectedCountry: CountryModel | undefined = countries.find(
+      (country: CountryModel) => e.target.value === country.country
     );
 
     if (selectedCountry) {
@@ -68,7 +68,7 @@ export default function CountrySelector({
         <option>{t`cases:worldwide`}</option>
         <option disabled>---</option>
         {countries
-          .sort((a: Country, b: Country) => {
+          .sort((a: CountryModel, b: CountryModel) => {
             if (a.country < b.country) {
               return -1;
             }
@@ -77,9 +77,9 @@ export default function CountrySelector({
             }
             return 0;
           })
-          .map((country: any) => (
+          .map((country: CountryModel) => (
             <option key={country.country} value={country.country}>
-              {countriesTranslations?.[country.country]?.[lang] ||
+              {countriesTranslations[country.country]?.[lang] ||
                 country.country}
             </option>
           ))}

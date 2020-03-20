@@ -4,7 +4,11 @@ type Props = {
   icon: JSX.Element;
 };
 
-export default function MeasureCard({ title, paragraph, icon }: Props) {
+export default function MeasureCard({
+  title,
+  paragraph,
+  icon
+}: Props): JSX.Element {
   return (
     <div className="flex">
       <div className="print__measure-icon">{icon}</div>

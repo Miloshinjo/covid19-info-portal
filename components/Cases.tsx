@@ -1,43 +1,44 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Stats from '../components/Stats';
 import CountryStats from '../components/CountryStats';
 import MostNewCases from '../components/MostNewCases';
 import CountrySelector from '../components/CountrySelector';
 import DataSource from '../components/DataSource';
-import useFetchData from '../hooks/useFetchData';
-const useTranslation = require('next-translate').useTranslation;
+import useFetchData, { UseFetchDataTypes } from '../hooks/useFetchData';
+import { CountryModel } from '../models';
 
-export type Country = {
-  country: string;
-  cases: number;
-  todayCases: number;
-  deaths: number;
-  todayDeaths: number;
-  recovered: number;
-  active: number;
-  critical: number;
-};
+const { useTranslation } = require('next-translate');
 
-export default function Cases() {
+export default function Cases(): JSX.Element {
   const { t } = useTranslation();
-  const [stats, fetchingStats, statsError] = useFetchData(
+  const [stats, fetchingStats, statsError]: UseFetchDataTypes = useFetchData(
     'https://coronavirus-19-api.herokuapp.com/all'
   );
-  const [countries, fetchingCountries, countriesError] = useFetchData(
+  const [
+    countries,
+    fetchingCountries,
+    countriesError
+  ]: UseFetchDataTypes = useFetchData(
     'https://coronavirus-19-api.herokuapp.com/countries'
   );
 
-  const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
+  const [selectedCountry, setSelectedCountry] = useState<CountryModel | null>(
+    null
+  );
 
   return (
     <section className="section">
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="section__header">{t`cases:title`}</h2>
-        <CountrySelector
-          countries={countries}
-          setSelectedCountry={setSelectedCountry}
-        />
+        <div className="flex justify-between items-start">
+          <CountrySelector
+            countries={countries}
+            setSelectedCountry={setSelectedCountry}
+          />
+          <button type="button">Refresh</button>
+        </div>
+
         {selectedCountry ? (
           <CountryStats
             country={selectedCountry}

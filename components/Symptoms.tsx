@@ -2,9 +2,10 @@ import SymptomCard from './SymptomCard';
 import CoughIcon from './icons/Cough';
 import FeverIcon from './icons/Fever';
 import LungsIcon from './icons/Lungs';
-const useTranslation = require('next-translate').useTranslation;
 
-export default function Symptoms() {
+const { useTranslation } = require('next-translate');
+
+export default function Symptoms(): JSX.Element {
   const { t } = useTranslation();
 
   return (

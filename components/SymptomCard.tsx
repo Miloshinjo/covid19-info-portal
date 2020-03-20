@@ -3,7 +3,7 @@ type Props = {
   icon: JSX.Element;
 };
 
-export default function SymptomCard({ title, icon }: Props) {
+export default function SymptomCard({ title, icon }: Props): JSX.Element {
   return (
     <div className="bg-white rounded inline-flex">
       <div className="p-4 flex items-center">

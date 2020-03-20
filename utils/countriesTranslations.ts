@@ -1,4 +1,11 @@
-const countriesTranslations: any = {
+const countriesTranslations: {
+  [key: string]: {
+    [key: string]: string;
+    en: string;
+    sr: string;
+    de: string;
+  };
+} = {
   Italy: {
     en: 'Italy',
     sr: 'Italija',

@@ -14,7 +14,7 @@ export default function Card({
   textColor = 'text-gray-900',
   fetching,
   error
-}: Props) {
+}: Props): JSX.Element {
   return (
     <div className="inline-flex flex-col justify-between elevation">
       <div className="p-4">

@@ -9,9 +9,7 @@ import Measures from '../components/Measures';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
-const useTranslation = require('next-translate').useTranslation;
-
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
   const router = useRouter();
   useEffect(() => {
     ReactGA.initialize('UA-160988414-1');
@@ -24,10 +22,8 @@ export default function HomePage() {
     if (lang === 'en') {
       router.push('/');
       return;
-    } else if (lang) {
-      router.push(`/${lang}`);
-      return;
     }
+    router.push(`/${lang}`);
   }, []);
 
   return (
