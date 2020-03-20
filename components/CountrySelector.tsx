@@ -34,7 +34,7 @@ export default function CountrySelector({
 
   if (!countries)
     return (
-      <div className="relative mb-8 w-full md:w-1/2">
+      <div className="relative w-full md:w-1/2">
         <div className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
           <Loading size={4} />
         </div>
@@ -58,7 +58,7 @@ export default function CountrySelector({
   };
 
   return (
-    <div className="relative mb-8 w-full md:w-1/2">
+    <div className="relative w-full md:w-1/2">
       <select
         aria-label="Select country to load information for"
         onChange={handleChange}
