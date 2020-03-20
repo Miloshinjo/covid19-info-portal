@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Stats from '../components/Stats';
 import CountryStats from '../components/CountryStats';
+import MostNewCases from '../components/MostNewCases';
 import CountrySelector from '../components/CountrySelector';
 import DataSource from '../components/DataSource';
 import useFetchData from '../hooks/useFetchData';
@@ -23,7 +24,7 @@ export default function Cases() {
   const [stats, fetchingStats, statsError] = useFetchData(
     'https://coronavirus-19-api.herokuapp.com/all'
   );
-  const [countryInfo, fetchingCountryInfo, countryInfoError] = useFetchData(
+  const [countries, fetchingCountries, countriesError] = useFetchData(
     'https://coronavirus-19-api.herokuapp.com/countries'
   );
 
@@ -34,20 +35,21 @@ export default function Cases() {
       <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="section__header">{t`cases:title`}</h2>
         <CountrySelector
-          countries={countryInfo}
+          countries={countries}
           setSelectedCountry={setSelectedCountry}
         />
         {selectedCountry ? (
           <CountryStats
             country={selectedCountry}
-            fetching={fetchingCountryInfo}
-            error={countryInfoError}
+            fetching={fetchingCountries}
+            error={countriesError}
           />
         ) : (
           <Stats stats={stats} fetching={fetchingStats} error={statsError} />
         )}
 
         <DataSource />
+        <MostNewCases countries={countries} />
       </div>
     </section>
   );

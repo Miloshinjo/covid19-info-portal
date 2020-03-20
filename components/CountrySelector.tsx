@@ -7,11 +7,12 @@ import {
 } from 'react';
 import Loading from '../components/Loading';
 import { Country } from './Cases';
+import countriesTranslations from '../utils/countriesTranslations';
 
 const useTranslation = require('next-translate').useTranslation;
 
 type Props = {
-  countries: [];
+  countries: Country[];
   setSelectedCountry: Dispatch<SetStateAction<null | any>>;
 };
 
@@ -19,7 +20,7 @@ export default function CountrySelector({
   countries,
   setSelectedCountry
 }: Props) {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [value, setValue] = useState<string>('');
 
   useEffect(() => {
@@ -78,7 +79,8 @@ export default function CountrySelector({
           })
           .map((country: any) => (
             <option key={country.country} value={country.country}>
-              {country.country}
+              {countriesTranslations?.[country.country]?.[lang] ||
+                country.country}
             </option>
           ))}
       </select>

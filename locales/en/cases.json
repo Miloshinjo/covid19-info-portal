@@ -7,5 +7,6 @@
   "worldwide": "Worldwide",
   "source": "Data source",
   "today": "Today",
-  "critical": "Critical"
+  "critical": "Critical",
+  "mostConfirmedToday": "Most new confirmed cases today"
 }
