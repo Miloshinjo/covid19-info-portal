@@ -5,5 +5,8 @@
   "fatal": "Fatalni",
   "unresolved": "Aktivni",
   "worldwide": "Ceo svet",
-  "lastUpdated": "Poslednji put ažurirano"
+  "source": "Izvor podataka",
+  "today": "Danas",
+  "critical": "Kritični",
+  "mostConfirmedToday": "Najveći broj novih slučajeva danas"
 }

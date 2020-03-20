@@ -5,5 +5,8 @@
   "fatal": "Fatal",
   "unresolved": "Active",
   "worldwide": "Worldwide",
-  "lastUpdated": "Last updated"
+  "source": "Data source",
+  "today": "Today",
+  "critical": "Critical",
+  "mostConfirmedToday": "Most new confirmed cases today"
 }

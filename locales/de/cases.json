@@ -1,0 +1,12 @@
+{
+  "title": "Bekannte Fälle",
+  "confirmed": "Bestätigte Fälle",
+  "recovered": "Genesene",
+  "fatal": "Todesfälle",
+  "unresolved": "Aktive Fälle",
+  "worldwide": "Weltweit",
+  "source": "Datenquelle",
+  "today": "Heute",
+  "critical": "Kritische Fälle",
+  "mostConfirmedToday": "Most confirmed cases today"
+}

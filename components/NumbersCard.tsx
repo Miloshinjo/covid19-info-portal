@@ -25,7 +25,7 @@ export default function Card({
           className={`text-center mt-3 font-medium text-4xl md:text-2xl xl:text-4xl ${textColor} flex justify-center`}
         >
           {error ? (
-            '0'
+            'Error'
           ) : fetching || value === undefined ? (
             <Loading />
           ) : (

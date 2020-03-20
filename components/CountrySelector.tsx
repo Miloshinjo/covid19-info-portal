@@ -1,35 +1,88 @@
-import { Dispatch, SetStateAction, ChangeEvent } from 'react';
+import {
+  ChangeEvent,
+  Dispatch,
+  SetStateAction,
+  useState,
+  useEffect
+} from 'react';
+import Loading from '../components/Loading';
+import { Country } from './Cases';
+import countriesTranslations from '../utils/countriesTranslations';
+
 const useTranslation = require('next-translate').useTranslation;
 
 type Props = {
-  countries: string[];
-  setUrl: Dispatch<SetStateAction<string>>;
+  countries: Country[];
+  setSelectedCountry: Dispatch<SetStateAction<null | any>>;
 };
 
-export default function CountrySelector({ countries, setUrl }: Props) {
-  const { t } = useTranslation();
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value === 'Worldwide' || e.target.value === 'Ceo svet') {
-      setUrl(`https://covid19.mathdro.id/api`);
-      return;
-    }
+export default function CountrySelector({
+  countries,
+  setSelectedCountry
+}: Props) {
+  const { t, lang } = useTranslation();
+  const [value, setValue] = useState<string>('');
 
-    setUrl(`https://covid19.mathdro.id/api/countries/${e.target.value}`);
+  useEffect(() => {
+    const countryJson: string | null = localStorage.getItem('selectedCountry');
+
+    if (countryJson) {
+      setSelectedCountry(JSON.parse(countryJson));
+      setValue(JSON.parse(countryJson)?.country);
+    }
+  }, []);
+
+  if (!countries)
+    return (
+      <div className="relative mb-8 w-full md:w-1/2">
+        <div className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+          <Loading size={4} />
+        </div>
+      </div>
+    );
+
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const selectedCountry: any = countries.find(
+      (country: Country) => e.target.value === country.country
+    );
+
+    if (selectedCountry) {
+      setValue(selectedCountry.country);
+      setSelectedCountry(selectedCountry);
+      localStorage.setItem('selectedCountry', JSON.stringify(selectedCountry));
+    } else {
+      setValue('');
+      setSelectedCountry(null);
+      localStorage.removeItem('selectedCountry');
+    }
   };
+
   return (
     <div className="relative mb-8 w-full md:w-1/2">
       <select
         aria-label="Select country to load information for"
         onChange={handleChange}
         className="block cursor-pointer appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        value={value}
       >
         <option>{t`cases:worldwide`}</option>
         <option disabled>---</option>
-        {countries.map((country: string) => (
-          <option key={country} value={country}>
-            {country}
-          </option>
-        ))}
+        {countries
+          .sort((a: Country, b: Country) => {
+            if (a.country < b.country) {
+              return -1;
+            }
+            if (a.country > b.country) {
+              return 1;
+            }
+            return 0;
+          })
+          .map((country: any) => (
+            <option key={country.country} value={country.country}>
+              {countriesTranslations?.[country.country]?.[lang] ||
+                country.country}
+            </option>
+          ))}
       </select>
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
         <svg
