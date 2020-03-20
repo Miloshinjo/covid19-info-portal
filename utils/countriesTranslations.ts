@@ -128,6 +128,106 @@ const countriesTranslations: any = {
     en: 'Togo',
     sr: 'Togo',
     de: 'Togo'
+  },
+  Azerbaijan: {
+    en: 'Azerbaijan',
+    sr: 'Azerbejdžan',
+    de: 'Aserbaidschan'
+  },
+  Bahamas: {
+    en: 'Bahamas',
+    sr: 'Bahami',
+    de: 'Bahamas'
+  },
+  Bahrain: {
+    en: 'Bahrain',
+    sr: 'Bahrein',
+    de: 'Bahrain'
+  },
+  Bangladesh: {
+    en: 'Bangladesh',
+    sr: 'Bangladeš',
+    de: 'Bangladesch'
+  },
+  Barbados: {
+    en: 'Barbados',
+    sr: 'Barbados',
+    de: 'Barbados'
+  },
+  Belarus: {
+    en: 'Belarus',
+    sr: 'Belorusija',
+    de: 'Weißrussland'
+  },
+  Belgium: {
+    en: 'Belgium',
+    sr: 'Belgija',
+    de: 'Belgien'
+  },
+  'S. Korea': {
+    en: 'South Korea',
+    sr: 'Južna Koreja',
+    de: 'Südkorea'
+  },
+  Luxembourg: {
+    en: 'Luxembourg',
+    sr: 'Luksemburg',
+    de: 'Luxemburg'
+  },
+  Benin: {
+    en: 'Benin',
+    sr: 'Benin',
+    de: 'Benin'
+  },
+  Bermuda: {
+    en: 'Bermuda',
+    sr: 'Bermuda',
+    de: 'Bermuda'
+  },
+  Bhutan: {
+    en: 'Bhutan',
+    sr: 'Butan',
+    de: 'Bhutan'
+  },
+  Bolivia: {
+    en: 'Bolivia',
+    sr: 'Bolivija',
+    de: 'Bolivien'
+  },
+  Brasil: {
+    en: 'Brasil',
+    sr: 'Brazil',
+    de: 'Brasilien'
+  },
+  Brunei: {
+    en: 'Brunei',
+    sr: 'Brunei',
+    de: 'Brunei'
+  },
+  Bulgaria: {
+    en: 'Bulgaria',
+    sr: 'Bugarska',
+    de: 'Bulgarien'
+  },
+  'Burkina Faso': {
+    en: 'Burkina Faso',
+    sr: 'Burkina Faso',
+    de: 'Burkina Faso'
+  },
+  CAR: {
+    en: 'Central African Republic',
+    sr: 'Centralnoafrička Republika',
+    de: 'Zentralafrikanische Republik'
+  },
+  'Cabo Verde': {
+    en: 'Cabo Verde',
+    sr: 'Kabo Verde',
+    de: 'Cabo Verde'
+  },
+  Cameroon: {
+    en: 'Cameroon',
+    sr: 'Kamerun',
+    de: 'Kamerun'
   }
 };
 
