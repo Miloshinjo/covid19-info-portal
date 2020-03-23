@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Stats from '../components/Stats';
 import CountryStats from '../components/CountryStats';
-import MostNewCases from '../components/MostNewCases';
+import Table from '../components/Table';
 import CountrySelector from '../components/CountrySelector';
 import DataSource from '../components/DataSource';
 import RefreshIcon from '../components/icons/Refresh';
@@ -68,7 +68,8 @@ export default function Cases(): JSX.Element {
         )}
 
         <DataSource />
-        <MostNewCases countries={countries} />
+        {/* <MostNewCases countries={countries} /> */}
+        <Table countries={countries} />
       </div>
     </section>
   );

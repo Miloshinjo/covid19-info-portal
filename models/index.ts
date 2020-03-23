@@ -13,6 +13,7 @@ export type CountryModel = {
   recovered: number;
   active: number;
   critical: number;
+  [key: string]: string | number;
 };
 
 export type ErrorModel = object | null;

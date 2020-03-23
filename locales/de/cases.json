@@ -8,5 +8,8 @@
   "source": "Datenquelle",
   "today": "Heute",
   "critical": "Kritische Fälle",
-  "mostConfirmedToday": "Most confirmed cases today"
+  "mostCasesToday": "Most cases today",
+  "mostDeathsToday": "Most fatal today",
+  "mostCases": "Most cases",
+  "mostDeaths": "Most fatal"
 }

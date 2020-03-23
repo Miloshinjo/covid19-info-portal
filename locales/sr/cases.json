@@ -8,5 +8,8 @@
   "source": "Izvor podataka",
   "today": "Danas",
   "critical": "Kritični",
-  "mostConfirmedToday": "Najveći broj novih slučajeva danas"
+  "mostCasesToday": "Najviše potvrđenih danas",
+  "mostDeathsToday": "Najviše fatalnih danas",
+  "mostCases": "Najviše potvđenih",
+  "mostDeaths": "Najviše fatalnih"
 }
