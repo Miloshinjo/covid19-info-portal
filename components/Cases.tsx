@@ -68,7 +68,6 @@ export default function Cases(): JSX.Element {
         )}
 
         <DataSource />
-        {/* <MostNewCases countries={countries} /> */}
         <Table countries={countries} />
       </div>
     </section>
