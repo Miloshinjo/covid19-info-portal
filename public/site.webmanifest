@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "COVID-19 Info Portal",
+  "short_name": "Covid-19 Info",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
