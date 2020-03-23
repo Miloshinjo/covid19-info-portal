@@ -43,7 +43,6 @@ export default function HomePage(): JSX.Element {
             hrefLang: 'sr-Latn-rs'
           }
         ]}
-        keywords=""
         openGraph={{
           url: 'https://www.corona19.life/',
           title: t`seo:title`,
