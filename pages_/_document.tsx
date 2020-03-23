@@ -36,26 +36,11 @@ class MyDocument extends Document<Props> {
     return (
       <Html lang={this.props.locale}>
         <Head>
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
-          />
           <meta
             name="keywords"
             content="Corona,Virus,Covid-19,Coronavirus,Information,Stats,Corona Stats"
           />
           <meta name="application-name" content="COVID-19 Info" />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="default"
-          />
-          <meta
-            name="description"
-            content="Latest information and stats about COVID-19"
-          />
-          <meta name="format-detection" content="telephone=no" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
