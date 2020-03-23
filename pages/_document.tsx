@@ -36,6 +36,17 @@ class MyDocument extends Document<Props> {
     return (
       <Html lang={this.props.locale}>
         <Head>
+          <meta name="application-name" content="COVID-19 Info" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+          />
+          <meta
+            name="description"
+            content="Latest information and stats about COVID-19"
+          />
+          <meta name="format-detection" content="telephone=no" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -53,10 +64,16 @@ class MyDocument extends Document<Props> {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
-          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="manifest" href="/manifest.json" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
+          <meta name="twitter:title" content="COVID-19 Info Portal" />
+          <meta
+            name="twitter:image"
+            content="https://corona19.life/static/icons/android-chrome-192x192.png"
+          />
+          <meta name="twitter:creator" content="@miloshinjo" />
         </Head>
         <body className="bg-gray-100 antialiased text-gray-900">
           <Main />
