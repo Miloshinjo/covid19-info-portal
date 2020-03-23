@@ -37,6 +37,7 @@ export default function Cases(): JSX.Element {
   const refreshData = (): void => {
     refetchStats();
     refetchCountries();
+    setSelectedCountry(selectedCountry);
   };
 
   return (

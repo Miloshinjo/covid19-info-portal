@@ -15,6 +15,7 @@ export default function CountryStats({
   error
 }: Props): JSX.Element {
   const { t } = useTranslation();
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
