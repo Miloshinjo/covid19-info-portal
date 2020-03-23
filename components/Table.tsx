@@ -64,7 +64,7 @@ export default memo(function Table({ countries }: Props): JSX.Element {
     });
 
   return (
-    <div className="flex flex-col min-width-100 shadow-lg bg-white mt-8 rounded-lg">
+    <div className="flex flex-col min-width-100 shadow-lg bg-white mt-8 rounded-lg overflow-hidden">
       <div className="flex">
         <TableHead title={t`cases:mostCasesToday`} />
         <TableHead title={t`cases:mostDeathsToday`} />
@@ -85,7 +85,7 @@ export default memo(function Table({ countries }: Props): JSX.Element {
 
 function TableHead({ title }: { title: string }): JSX.Element {
   return (
-    <h4 className="w-1/4 uppercase text-xs font-semibold text-gray-500 bg-gray-100 p-4 flex justify-start">
+    <h4 className="w-1/4 uppercase text-xs font-medium text-gray-600 bg-gray-100 p-4 flex justify-start">
       {title}
     </h4>
   );
