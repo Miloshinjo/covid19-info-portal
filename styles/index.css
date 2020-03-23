@@ -23,7 +23,7 @@
 
 .elevation {
   /* @apply bg-white shadow-lg rounded-lg; */
-  @apply bg-white shadow rounded-lg;
+  @apply bg-white shadow-lg rounded-lg;
 }
 
 @media print {
