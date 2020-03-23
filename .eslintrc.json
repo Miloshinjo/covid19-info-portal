@@ -30,7 +30,7 @@
   "rules": {
     // ...
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "import/extensions": "off",

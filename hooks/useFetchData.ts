@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export type UseFetchDataTypes = [
@@ -14,7 +14,7 @@ export default function useFetchData(url: string): UseFetchDataTypes {
   const [error, setError] = useState<null | object>(null);
   const [fetching, setFetching] = useState<boolean>(false);
 
-  const fetchData = useCallback(async () => {
+  const fetchData = async (): Promise<void> => {
     try {
       setFetching(true);
       setError(null);
@@ -25,11 +25,11 @@ export default function useFetchData(url: string): UseFetchDataTypes {
     } finally {
       setFetching(false);
     }
-  }, [url]);
+  };
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, []);
 
   return [fetchedData, fetching, error, fetchData];
 }

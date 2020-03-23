@@ -54,7 +54,7 @@ export default function Cases(): JSX.Element {
             className="focus:outline-none hover:text-gray-900 transform hover:scale-105 ml-4 md:ml-0 hover:scale-1 text-gray-600 transition duration-150"
             aria-label="Refresh results"
           >
-            <RefreshIcon className="" />
+            <RefreshIcon />
           </button>
         </div>
 
