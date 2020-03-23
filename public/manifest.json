@@ -6,5 +6,16 @@
   "theme_color": "#f7fafc",
   "display": "minimal-ui",
   "orientation": "portrait-primary",
-  "icons": [{ "src": "mstile-70x70", "sizes": "96x96", "type": "image/png" }]
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
