@@ -2,3 +2,5 @@ node_modules
 .next
 assets
 .now
+**/public/workbox-*.js
+**/public/sw.js
