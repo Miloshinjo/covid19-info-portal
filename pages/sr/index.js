@@ -7,8 +7,9 @@ import ns1 from '../../locales/sr/measures.json'
 import ns2 from '../../locales/sr/faq.json'
 import ns3 from '../../locales/sr/symptoms.json'
 import ns4 from '../../locales/sr/footer.json'
+import ns5 from '../../locales/sr/seo.json'
 
-const namespaces = { 'cases': ns0, 'measures': ns1, 'faq': ns2, 'symptoms': ns3, 'footer': ns4 }
+const namespaces = { 'cases': ns0, 'measures': ns1, 'faq': ns2, 'symptoms': ns3, 'footer': ns4, 'seo': ns5 }
 
 export default function Page(p){
   return (
