@@ -18,4 +18,4 @@ There is also `utils/countriesTranslations.ts` file, which contains all the coun
 
 English<br/>
 Serbian<br/>
-Thanks to [yecicen](https://github.com/yecicen) for Turkish
+Turkish. Thanks to [yecicen](https://github.com/yecicen) for translating.
