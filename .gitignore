@@ -2,5 +2,12 @@ node_modules
 .next
 assets
 .now
-**/public/workbox-*.js
-**/public/sw.js
+
+public/precache.*.*.js
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+public/precache.*.*.js.map
+public/sw.js.map
+public/workbox-*.js.map
+public/worker-*.js.map
