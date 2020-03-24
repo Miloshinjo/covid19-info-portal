@@ -7,14 +7,14 @@ export default function CountrySelector(): JSX.Element {
   const [value, setValue] = useState<string>(router.pathname.replace('/', ''));
   const handleChange = (e: ChangeEvent<HTMLSelectElement>): void => {
     if (e.target.value === 'en') {
-      router.push('/');
+      router.replace('/');
       setValue(e.target.value);
       localStorage.setItem('lang', 'en');
       return;
     }
 
     localStorage.setItem('lang', e.target.value);
-    router.push(`/${e.target.value}`);
+    router.replace(`/${e.target.value}`);
     setValue(e.target.value);
   };
 

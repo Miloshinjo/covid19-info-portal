@@ -23,10 +23,10 @@ export default function HomePage(): JSX.Element {
     const lang: string | null = localStorage.getItem('lang');
 
     if (lang === 'en' || !lang) {
-      router.push('/');
+      router.replace('/');
       return;
     }
-    router.push(`/${lang}`);
+    router.replace(`/${lang}`);
   }, []);
 
   const { t } = useTranslation();
