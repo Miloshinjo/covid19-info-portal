@@ -1,0 +1,27 @@
+{
+  "title": "Kendinizi korumak için neler yapabilirsiniz?",
+  "socialDistancing": {
+    "title": "Sosyal Mesafe",
+    "paragraph": "Eğer yapabiliyorsanız lütfen evinizde kalın.Virüsten korunmak için en iyi yol budur. Eğer mümkünse, eviniziden çalışın. Acil bir durum olmadığı sürece evden çıkmayın."
+  },
+  "washHands": {
+    "title": "Ellerinizi yıkayın",
+    "paragraph": "Elinizi su ve sabunla en az 15-20 saniye yıkayın. Eğer bu mümkün değilse, en az %60 alkol içeren el temizleyicisi veya kolonya kullanın."
+  },
+  "dontTouchFace": {
+    "title": "Yüzünüze dokunmayın",
+    "paragraph": "Ellerinizi gözünüzden, burnunuzdan ve ağzınızdan uzakta tutun."
+  },
+  "dontShakeHands": {
+    "title": "Tokalaşmayın",
+    "paragraph": "Salgın tamamen bitene kadar, lütfen tokalaşmayın. İnsanlarla mesafenizi koruyun. Selamlaşmak için tokalaşmak şart değildir."
+  },
+  "ventilate": {
+    "title": "Evinizi havalandırın",
+    "paragraph": "Evinize giren hava miktarını camı açarak artırın. Düzgün havalandırma virüs patojenlerinin yayılımını azaltır."
+  },
+  "immunity": {
+    "title": "Bağışıklığınızı güçlü tutun",
+    "paragraph": "Yeterli düzeyde uyku aldığınızdan emin olun, sağlıklı beslenin ve vitamin almaya özen gösterin. Mümkünse ev içerisinde hareket edin, spor yapın."
+  }
+}
