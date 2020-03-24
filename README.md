@@ -16,6 +16,6 @@ There is also `utils/countriesTranslations.ts` file, which contains all the coun
 
 ### Available Languages
 
-English
-Serbian
-Thanks to [yecicen](https://github.com/yecicen) for Turkish..
+English<br/>
+Serbian<br/>
+Thanks to [yecicen](https://github.com/yecicen) for Turkish
