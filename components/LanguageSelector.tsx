@@ -31,8 +31,8 @@ export default function CountrySelector(): JSX.Element {
         value={value}
       >
         <option value="en">{innerWidth > 500 ? 'English' : 'En'}</option>
-
         <option value="sr">{innerWidth > 500 ? 'Srpski' : 'Sr'}</option>
+        <option value="tr">{innerWidth > 500 ? 'Türkçe' : 'Tr'}</option>
       </select>
 
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 hidden md:flex">

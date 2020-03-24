@@ -10,6 +10,6 @@ Feel free to contribute and make PRs if you can improve or add some features. I 
 
 ## If you want to add a translation
 
-There is a `locales` folder, create a new folder inside of with your language code. Then just copy from `en.json` and translate and create a PR.
+There is a `locales` folder, create a new folder inside of with your language code. Then just copy from `en.json` and translate and create a PR. GGerman is unfinished if anyone feels like taking a stab at it. Just translate the json, i'll do the rest.
 
 There is also `utils/countriesTranslations.ts` file, which contains all the country names, which you can translate to your language code (if you do not, they will appear in English.).

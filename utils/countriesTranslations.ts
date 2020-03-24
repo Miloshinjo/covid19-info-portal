@@ -1,3 +1,5 @@
+// TODO: finish these translations.
+
 const countriesTranslations: {
   [key: string]: {
     [key: string]: string;
