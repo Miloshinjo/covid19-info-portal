@@ -7,3 +7,7 @@ This is a basic website to give some info about new corona virus disease. It's c
 Frontend stack is next.js and tailwindcss.
 
 Feel free to contribute and make PRs if you can improve or add some features. I keep the full discretion to refuse any PR I don't think suits the site. Translations to any other languages are more then welcome.
+
+## If you want to add a translation
+
+There is a `locales` folder, create a new folder inside of with your language code. Then just copy from `en.json` and translate and create a PR.
