@@ -1,0 +1,15 @@
+{
+  "title": "Bilinen vakalar",
+  "confirmed": "Kesinleşmiş",
+  "recovered": "İyileşmiş",
+  "fatal": "Ölümcül",
+  "unresolved": "Aktif",
+  "worldwide": "Dünya Geneli",
+  "source": "Veri kaynağı",
+  "today": "Bugün",
+  "critical": "Kritik",
+  "mostCasesToday": "Bugünkü en çok vaka",
+  "mostDeathsToday": "Bugünkü en çok ölüm",
+  "mostCases": "En çok vakalar",
+  "mostDeaths": "En çok ölümler"
+}

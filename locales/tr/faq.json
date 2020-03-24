@@ -1,0 +1,67 @@
+{
+  "title": "Sıkça Sorulan Sorular",
+  "isThereVaccine": {
+    "q": "Bir aşısı var mı?",
+    "a": "Henüz geliştirilmiş bir aşı yok."
+  },
+  "howIsSpread": {
+    "q": "COVID-19 nasıl yayılır ve bilinen semptomları nelerdir?",
+    "a": "COVID-19 en çok solunum yoluyla yayılır, yani hastalığın bulaşması için, hasta birinin 6 adım yakınında bulunmak ve havadaki virüs parçalarına denk gelmeniz yeterlidir. COVID-19 dokunma yoluyla da bulaşabilir. Hastalık taşıyan bir yüzeye dokunmanız ve ellerinizi ağız, burun veya gözünüze götürmeniz durumunda bulaşabilir.Ancak bu virüsün ana yayılım şekli değildir. Semptomlar 2 ile 14 gün içerisinde belirebilir.Yaygın görülen semptomlar yüksek ateş, öksürme, burun akıntısı ve nefes almada güçlüktür."
+  },
+  "howLongSymptomsToAppear": {
+    "q": "COVID-19 semptomları kaç günde ortaya çıkar?",
+    "a": "Belirtiler virüse maruz kaldıktan sonra 2 ile 14 gün arasında açığa çıkar.Yayılımı önlemek için, pek çok devlet 14 gün boyunca izole olmanızı zorunlu kılar."
+  },
+  "howIsTreated": {
+    "q": "COVID-10 nasıl tedavi edilir?",
+    "a": "Henüz bilinen bir tedavi bulunamamıştır. Ancak semptomlara sahip hastalara bu semptomları yenebilmesi için yardımcı tedaviler uygulanmaktadır. Kesin tanı konulan vakalarda, semptomlar orta ölçekte başlayıp şiddetlenerek ölümcül bir hal almaktadır. Hastalığın ciddi evresinde, hayati organlar için de yardımcı tedaviler uygulanması gerekmektedir. Belirtileriniz ciddileşirse (örneğin nefes almakta zorluk yaşarsanız) lütfen bir sağlık kuruluşuna başvurun. Hastaneye gitmeden önce mutlaka maskenizi takın ve koruyucu kıyafetler giyin."
+  },
+  "deathRate": {
+    "q": "Virüsün öldürme oranı nedir?",
+    "a": "Şu anda virüsten dolayı ölüm oranı %1-5 arasındadır. Ama bu virüs tanısı konan hastalar için geçerlidir. Gerçek ölüm oranı farklı olabilir."
+  },
+  "antibiotics": {
+    "q": "Antibiyotikler virüse karşı etkili midir?",
+    "a": "Hayır. Antibiyotikler virüslere karşı etkisizdir. Sadece bakterilere karşı etki gösterebilirler. COVID-19 virüsten kaynaklı bir salgındır, dolayısıyla antibiyotikler tedavi için veya korunma için kullanılmaz."
+  },
+  "boostImmuneSystem": {
+    "q": "Bağışıklık sistemimi nasıl güçlendirebilirim?",
+    "a": "Düzenli uyku en önemli faktördür. Her gün en az 8 saat uyuduğunuzdan emin olun. Dengeli ve çeşitli bir diyet de bağışıklığınızı güçlendirir. Yeterli düzeyde vitamin, mineral aldığınızdan emin olun. Özellikle C, D, E vitaminleri ve Selenyum, Çinko minerallerini almanız oldukça önemlidir."
+  },
+  "getItAgain": {
+    "q": "COVID-19'dan iyileştiğimde tekrar yakalanma olasılığım var mıdır?",
+    "a": "Muhtemelen hayır. Bazı hastalarda, iyileştikten sonra yapılan testler pozitif çıktı. Ama bu büyük olasılıkla semptomların geçmiş ancak virüsün hala vücuttan çıkmaması durumundan dolayı. Bulgular bu durumu %100 kesinleştirmek için yeterli değil."
+  },
+  "ibuprofen": {
+    "q": "Virüs semptomlarını azaltmak için ateş düşürücü ilaçlar (ibuprofen ya da cortisone gibi) almamam gerektiğini duydum. Bu doğru mu?",
+    "a": "Muhtemelen evet. Bu konuda henüz kesin bir bilgi yok ancak Fransa Sağlık Bakanlığı bu tür, doktor onayı olmadan alınan ilaçların virüste karmaşıklığa yol açtığını ve ölümcül sonuçları olabileceğini duyurdu. Ayrıca, yüksek ateş vücudumuzun hastalıklarla mücadelede kullandığı bir savunma biçimidir. En güvenli yol, bir ilaç almadan önce mutlaka doktorunuza danışmanızdır."
+  },
+  "zinc": {
+    "q": "Çinkonun virüsün vücuda yayılımını durdurduğunu duydum, bu doğru mu?",
+    "a": "Hayır. Çinko bağışıklık sisteminizi güçlendirebilir ama sizi COVID-19'dan koruduğuna dair hiçbir çalışma yoktur."
+  },
+  "disinfectantSprays": {
+    "q": "Dezenfektan spreyler veya ıslak mendiller vücudumuzu virüsten korumak için kullanılabilir mi?",
+    "a": "Hayır. Her zaman genel temizlik kurallarına uyun. Bilmediğiniz dezenfektanlar cildinize ve gözünüze zarar verebilir. Dezenfektanlar insanların veya hayvanların kullanımına yönelik değildir, zorlu yüzeyleri dezenfekte etmek içindir."
+  },
+  "importedGoodsFromChina": {
+    "q": "Çinden gelmiş ürünlerden COVID-19 virüsü kapabilir miyim?",
+    "a": "Şu anda, virüsün ithal edilen ürünlerden (yiyecekler, mamalar, ilaçlar da dahil) bulaşabildiğine dair bir kanıt yoktur. Ambalajlı ürünlerde bulunan hava boşluğu virüsün çoğalması için elverişli değildir. Henüz ithal edilen ürünler yüzünden hastalanan bir vaka yoktur."
+  },
+  "youngAndHealthy": {
+    "q": "Genç ve sağlıklı bir bireyim, neden virüse karşı dikkatli olmalıyım?",
+    "a": "Öncelikle, herhangi bir virüs herkes için büyük bir tehdit, özellikle de solunum yolunuzu hedef alanlar.İkinci olarak, diğer insanlara hastalık bulaştırmak istemeyiz.Üçüncü ve en önemlisi, hastanelere yük olmamamız gerekir. Eğer çok fazla kişi aynı anda hasta olursa, kritik hastalar için yeterli hastane kapasitesi olmaz. Bu virüsten hızlıca kurtulmak için herkes kendini korumalı ve kurallara uymalıdır."
+  },
+  "riskGroups": {
+    "q": "En riskli gruplar hangileridir?",
+    "a": "En büyük risk altında olanlar bağışıklık sistemi zayıf olan insanlardır. Örneğin kanser, HIV hastası veya kronik hastalığı olan kimseler. Diğer risk altında olanlar, yaşlılar, hamileler, sigara tüketenler ve aşırı kilolu insanlar."
+  },
+  "masks": {
+    "q": "Maskeler işe yarar mı?",
+    "a": "Maske sizi enfekte olmaktan korumaz. Eğer hastaysanız, maske giyerek virüsün diğer insanlara yayılma riskini azaltmalısınız. Eğer hasta değilseniz, maske giymek zorunda değilsiniz. Sağlık çalışanları için yeterli sayıda maske kalmayabilir, maskelerinizi daha sonrası için saklamalısınız."
+  },
+  "surfaces": {
+    "q": "Virüs yüzeylerde ne kadar süre kalır?",
+    "a": "Virüslerin sert yüzeylerde 3-4 gün kaldığını varsayıyoruz. Kimi durumlarda 17güne kadar kaldığı olabiliyor. Bu konuda veri gelmeye devam ediyor. Yumuşak yüzeylerde ise (kumaş gibi) birkaç saate kadar kalabiliyor."
+  }
+}
