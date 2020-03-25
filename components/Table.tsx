@@ -64,7 +64,7 @@ export default memo(function Table({ countries }: Props): JSX.Element {
     });
 
   return (
-    <div className="flex flex-col min-width-100 shadow-lg bg-white mt-8 rounded-lg overflow-hidden">
+    <div className="flex flex-col min-width-100 shadow-md bg-white mt-8 rounded-lg overflow-hidden">
       <div className="flex">
         <TableHead title={t`cases:mostCasesToday`} />
         <TableHead title={t`cases:mostDeathsToday`} />

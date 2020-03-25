@@ -1,4 +1,4 @@
-import { ChangeEvent, useState, useLayoutEffect } from 'react';
+import { ChangeEvent, useState, useEffect, useLayoutEffect } from 'react';
 import { useRouter } from 'next/router';
 
 export default function CountrySelector(): JSX.Element {
@@ -18,7 +18,10 @@ export default function CountrySelector(): JSX.Element {
     setValue(e.target.value);
   };
 
-  useLayoutEffect(() => {
+  const useEnhancedEffect =
+    typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+
+  useEnhancedEffect(() => {
     setInnerWidth(window.innerWidth);
   }, []);
 

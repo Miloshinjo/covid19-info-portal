@@ -42,7 +42,7 @@ export default function Cases(): JSX.Element {
 
   return (
     <section className="section">
-      <div className="mx-auto w-full px-4 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
+      <div className="mx-auto w-full rounded px-8 lg:px-0 lg:w-1/2 flex flex-col justify-center py-8">
         <h2 className="section__header">{t`cases:title`}</h2>
         <div className="flex justify-between items-center mb-8">
           <CountrySelector

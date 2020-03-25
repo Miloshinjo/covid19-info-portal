@@ -1,5 +1,6 @@
 import Card from './NumbersCard';
 import { CountryModel, ErrorModel } from '../models';
+import countriesTranslations from '../utils/countriesTranslations';
 
 const { useTranslation } = require('next-translate');
 
@@ -14,10 +15,13 @@ export default function CountryStats({
   fetching,
   error
 }: Props): JSX.Element {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
 
   return (
-    <>
+    <div className="bg-gray-200 p-4 rounded-lg">
+      <h2 className="mb-4 text-2xl font-semibold">
+        {countriesTranslations[country?.country]?.[lang] || country.country}
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
         <Card
           title={t`cases:confirmed`}
@@ -28,49 +32,43 @@ export default function CountryStats({
         <Card
           title={t`cases:recovered`}
           value={country?.recovered}
-          textColor="text-teal-600"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:fatal`}
           value={country?.deaths}
-          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:unresolved`}
           value={country?.cases - country?.deaths - country?.recovered}
-          textColor="text-orange-600"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:critical`}
           value={country?.critical}
-          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />
-        <div className="flex items-center justify-center text-2xl">
+        <div className="flex items-center md:justify-center text-2xl">
           {t`cases:today`}
         </div>
         <Card
           title={t`cases:confirmed`}
           value={country?.todayCases}
-          textColor="text-gray-900"
           fetching={fetching}
           error={Boolean(error)}
         />
         <Card
           title={t`cases:fatal`}
           value={country?.todayDeaths}
-          textColor="text-red-500"
           fetching={fetching}
           error={Boolean(error)}
         />
       </div>
-    </>
+    </div>
   );
 }
