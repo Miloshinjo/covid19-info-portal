@@ -95,7 +95,7 @@ function TableHead({
   return (
     <h4
       className={`w-1/4 uppercase text-xs font-medium text-gray-600 bg-gray-100 p-4 flex ${
-        rtl ? 'justify-end' : 'justify-start'
+        rtl ? 'justify-end text-right' : 'justify-start'
       }`}
     >
       {title}

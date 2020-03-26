@@ -61,7 +61,10 @@ export default function CountryStats({
           error={Boolean(error)}
           rtl={lang === 'ar'}
         />
-        <div className="flex items-center md:justify-center text-2xl">
+        <div
+          className={`flex items-center md:justify-center text-2xl ${lang ===
+            'ar' && 'justify-end'}`}
+        >
           {t`cases:today`}
         </div>
         <Card
