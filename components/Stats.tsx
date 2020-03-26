@@ -21,28 +21,28 @@ export default function Stats({ stats, fetching, error }: Props): JSX.Element {
           value={stats?.cases}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=== 'ar' ? "rtl" : ""}
+          rtl={lang === 'ar'}
         />
         <Card
           title={t`cases:recovered`}
           value={stats?.recovered}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=== 'ar' ? "rtl" : ""}
+          rtl={lang === 'ar'}
         />
         <Card
           title={t`cases:fatal`}
           value={stats?.deaths}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=== 'ar' ? "rtl" : ""}
+          rtl={lang === 'ar'}
         />
         <Card
           title={t`cases:unresolved`}
           value={stats?.cases - stats?.deaths - stats?.recovered}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=== 'ar' ? "rtl" : ""}
+          rtl={lang === 'ar'}
         />
       </div>
     </div>

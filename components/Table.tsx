@@ -16,10 +16,10 @@ export default memo(function Table({ countries }: Props): JSX.Element {
     return (
       <div className="shadow-lg bg-white rounded-lg mt-8">
         <div className="flex">
-          <TableHead title={t`cases:mostCasesToday`} />
-          <TableHead title={t`cases:mostDeathsToday`} />
-          <TableHead title={t`cases:mostCases`} />
-          <TableHead title={t`cases:mostDeaths`} />
+          <TableHead title={t`cases:mostCasesToday`} rtl={lang === 'ar'} />
+          <TableHead title={t`cases:mostDeathsToday`} rtl={lang === 'ar'} />
+          <TableHead title={t`cases:mostCases`} rtl={lang === 'ar'} />
+          <TableHead title={t`cases:mostDeaths`} rtl={lang === 'ar'} />
         </div>
         <div className="flex items-center justify-center">
           <Loading />
@@ -48,6 +48,7 @@ export default memo(function Table({ countries }: Props): JSX.Element {
               country.country
             }
             number={country[key]}
+            rtl={lang === 'ar'}
           />
         );
       }
@@ -58,6 +59,7 @@ export default memo(function Table({ countries }: Props): JSX.Element {
             countriesTranslations?.[country.country]?.[lang] || country.country
           }
           number={country[key]}
+          rtl={lang === 'ar'}
           colored
         />
       );
@@ -66,10 +68,10 @@ export default memo(function Table({ countries }: Props): JSX.Element {
   return (
     <div className="flex flex-col min-width-100 shadow-md bg-white mt-8 rounded-lg overflow-hidden">
       <div className="flex">
-        <TableHead title={t`cases:mostCasesToday`} />
-        <TableHead title={t`cases:mostDeathsToday`} />
-        <TableHead title={t`cases:mostCases`} />
-        <TableHead title={t`cases:mostDeaths`} />
+        <TableHead title={t`cases:mostCasesToday`} rtl={lang === 'ar'} />
+        <TableHead title={t`cases:mostDeathsToday`} rtl={lang === 'ar'} />
+        <TableHead title={t`cases:mostCases`} rtl={lang === 'ar'} />
+        <TableHead title={t`cases:mostDeaths`} rtl={lang === 'ar'} />
       </div>
       <div className="flex">
         <TableColumn>{produceCells(mostCasesToday, 'todayCases')}</TableColumn>
@@ -83,9 +85,19 @@ export default memo(function Table({ countries }: Props): JSX.Element {
   );
 });
 
-function TableHead({ title }: { title: string }): JSX.Element {
+function TableHead({
+  title,
+  rtl
+}: {
+  title: string;
+  rtl: boolean;
+}): JSX.Element {
   return (
-    <h4 className="w-1/4 uppercase text-xs font-medium text-gray-600 bg-gray-100 p-4 flex justify-start">
+    <h4
+      className={`w-1/4 uppercase text-xs font-medium text-gray-600 bg-gray-100 p-4 flex ${
+        rtl ? 'justify-end' : 'justify-start'
+      }`}
+    >
       {title}
     </h4>
   );
@@ -98,16 +110,18 @@ function TableColumn({ children }: { children: ReactNode }): JSX.Element {
 function TableCell({
   country,
   number,
-  colored = false
+  colored = false,
+  rtl
 }: {
   country: string;
   number: ReactText;
   colored?: boolean;
+  rtl: boolean;
 }): JSX.Element {
   return (
     <div
       className={`py-4 flex flex-col text-left px-4 ${colored &&
-        'bg-gray-100'}`}
+        'bg-gray-100'} ${rtl && 'text-right'}`}
     >
       <div className="text-xs font-medium md:font-normal sm:text-sm md:text-xl">
         {country}
