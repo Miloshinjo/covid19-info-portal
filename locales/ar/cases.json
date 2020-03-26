@@ -1,0 +1,15 @@
+{
+  "title": "الحالات المقررة",
+  "confirmed": "حالة مؤكدة",
+  "recovered": "حالة شفاء ",
+  "fatal": "حالة وفاة",
+  "unresolved": "حالة نشطة",
+  "worldwide": "على مستوى العالم",
+  "source": "مصدر المعطيات",
+  "today": "اليوم",
+  "critical": "حالة حرجة",
+  "mostCasesToday": "أكثر الحالات لليوم",
+  "mostDeathsToday": "أكثر الوفيات لليوم",
+  "mostCases": "أكثر الحالات",
+  "mostDeaths": "أكثر الوفيات"
+}
