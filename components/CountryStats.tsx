@@ -28,35 +28,35 @@ export default function CountryStats({
           value={country?.cases}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <Card
           title={t`cases:recovered`}
           value={country?.recovered}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <Card
           title={t`cases:fatal`}
           value={country?.deaths}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <Card
           title={t`cases:unresolved`}
           value={country?.cases - country?.deaths - country?.recovered}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <Card
           title={t`cases:critical`}
           value={country?.critical}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <div className="flex items-center md:justify-center text-2xl">
           {t`cases:today`}
@@ -66,14 +66,14 @@ export default function CountryStats({
           value={country?.todayCases}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
         <Card
           title={t`cases:fatal`}
           value={country?.todayDeaths}
           fetching={fetching}
           error={Boolean(error)}
-          dir = {lang=='ar' ? "rtl" : ""}
+          dir = {lang=== 'ar' ? "rtl" : ""}
         />
       </div>
     </div>

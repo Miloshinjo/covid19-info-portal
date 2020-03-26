@@ -18,7 +18,7 @@ export default function Card({
   return (
     <div className="inline-flex flex-col justify-between bg-white shadow-md rounded-lg">
       <div className="p-4">
-        <h2 className={ dir == "rtl" ?"font-semibold text-sm md:text-base xl:text-sm text-gray-600 text-right": "font-semibold text-sm md:text-base xl:text-sm text-gray-600"}>
+        <h2 className={ dir ==="rtl" ?"font-semibold text-sm md:text-base xl:text-sm text-gray-600 text-right": "font-semibold text-sm md:text-base xl:text-sm text-gray-600"}>
           {title}
         </h2>
         <div className="text-center font-bold text-3xl md:text-2xl xl:text-3xl text-gray-900 flex">

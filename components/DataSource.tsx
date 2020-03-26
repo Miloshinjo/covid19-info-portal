@@ -5,7 +5,7 @@ export default function DataSource(): JSX.Element {
 
   return (
     <div className="text-center mt-2 text-xs lowercase">
-      {lang=='ar' ? null : <span>{t`cases:source`}:{' '}</span>}
+      {lang=== 'ar' ? null : <span>{t`cases:source`}:{' '}</span>}
       <a
         href="https://www.worldometers.info/coronavirus/"
         target="_blank"
@@ -14,7 +14,7 @@ export default function DataSource(): JSX.Element {
       >
         worldometers.info
       </a>
-      {lang=='ar' ? <span>{' '}:{t`cases:source`}</span> : null}
+      {lang=== 'ar' ? <span>{' '}:{t`cases:source`}</span> : null}
     </div>
   );
 }
