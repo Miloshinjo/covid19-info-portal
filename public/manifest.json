@@ -1,7 +1,7 @@
 {
   "name": "COVID-19 Info Portal",
   "short_name": "Covid-19 Info",
-  "theme_color": "#f7fafc",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "minimal-ui",
   "orientation": "portrait",
