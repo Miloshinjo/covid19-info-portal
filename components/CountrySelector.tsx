@@ -23,15 +23,6 @@ export default function CountrySelector({
   const { t, lang } = useTranslation();
   const [value, setValue] = useState<string>('');
 
-  useEffect(() => {
-    const countryJson: string | null = localStorage.getItem('selectedCountry');
-
-    if (countryJson) {
-      setSelectedCountry(JSON.parse(countryJson));
-      setValue(JSON.parse(countryJson)?.country);
-    }
-  }, []);
-
   if (!countries)
     return (
       <div className="relative w-full md:w-1/2">
