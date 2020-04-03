@@ -49,11 +49,9 @@ export default function CountrySelector({
     if (selectedCountry) {
       setValue(selectedCountry.country);
       setSelectedCountry(selectedCountry);
-      localStorage.setItem('selectedCountry', JSON.stringify(selectedCountry));
     } else {
       setValue('');
       setSelectedCountry(null);
-      localStorage.removeItem('selectedCountry');
     }
   };
 
